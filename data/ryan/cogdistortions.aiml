@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
   
-  <!-- can I eventually find a way to store a list of what the user picks as distortions that apply to them and show it later? -->
+  #image:distortions.png,duration:-1
+  #image:clrscr,duration:-1
+  <!-- leaving that statement commented out so can return to choices if user picks to learn about another one -->
   
   <!-- leaving variables in for now in case chose to do something with them at some point -->
 
 <!-- ***************************************************FILTERING************************************************************* --> 
 <category><pattern>FILTERING</pattern>
     <!-- for now leave out this that statement so that the topics can be returned to at a later time in a different sentence -->
-    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT</that>-->
+    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT?</that>-->
     <template>
-        Filtering is magnifying negative details while filtering out all positive aspects of a situation so that the negative details are all that you can see. Do you feel like filtering applies to you?
+        Filtering is magnifying negative details while filtering out all positive aspects of a situation so that the negative details are all that you can see. Do you feel like filtering applies to you?(yes|no)#image:clrscr,duration:-1
     </template>
 </category>
 
  <!-- FILTERING yes- continue with exercise -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU FEEL LIKE FILTERING APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE FILTERING APPLIES TO YOU?</that>
     <template> 
-        Great job on identifying a distortion! Filtering is such a common distortion, but once you identify it, you can turn it around! The first thing I want you to do is tell me a negative thought. </template>
+        Great job on identifying a distortion! Filtering is such a common distortion, but once you identify it, you can turn it around! The first thing I want you to do is tell me a negative thought. 
+    </template>
 </category>
 
 <category><pattern>*</pattern>
-    <that>THE FIRST THING I WANT YOU TO DO IS TELL ME A NEGATIVE THOUGHT</that>
+    <that>THE FIRST THING I WANT YOU TO DO IS TELL ME A NEGATIVE THOUGHT.</that>
     <template>
         <!-- <think><set name = "filteringNegMood"><star/></set></think> -->
         Great! Now I want you to think of one positive thing that you maybe aren't taking into too much consideration right now. Tell me about it when you are ready.
@@ -30,7 +33,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>TELL ME ABOUT IT WHEN YOU ARE READY</that>
+    <that>TELL ME ABOUT IT WHEN YOU ARE READY.</that>
     <template>
          <!--<think><set name = "filteringPosMoodOne"><star/></set></think> -->
         Excellent! Now tell me another positive thought about the situation.
@@ -38,7 +41,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>NOW TELL ME ANOTHER POSITIVE THOUGHT ABOUT THE SITUATION</that>
+    <that>NOW TELL ME ANOTHER POSITIVE THOUGHT ABOUT THE SITUATION.</that>
     <template>
         <!--<think><set name = "filteringPosMoodTwo"><star/></set></think>-->
         Great! I know this can be difficult, but think of one more positive thought about you or the situation.
@@ -46,7 +49,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>I KNOW THIS CAN BE DIFFICULT, BUT THINK OF ONE MORE POSITIVE THOUGHT ABOUT YOU OR THE SITUATION</that>
+    <that>I KNOW THIS CAN BE DIFFICULT, BUT THINK OF ONE MORE POSITIVE THOUGHT ABOUT YOU OR THE SITUATION.</that>
     <template>
         <!--<think><set name = "filteringPosMoodThree"><star/></set></think>-->
          Incredible! The last thing I want you to do is rephrase your initial thought in a more positive way now that you have identified some positive things about it.
@@ -55,55 +58,59 @@
 
 <!-- Eventually redirect this to goodbye -->
 <category><pattern>*</pattern>
-    <that>THE LAST THING I WANT YOU TO DO IS REPHRASE YOUR INITIAL THOUGHT IN A MORE POSITIVE WAY NOW THAT YOU HAVE IDENTIFIED SOME POSITIVE THINGS ABOUT IT</that>
+    <that>THE LAST THING I WANT YOU TO DO IS REPHRASE YOUR INITIAL THOUGHT IN A MORE POSITIVE WAY NOW THAT YOU HAVE IDENTIFIED SOME POSITIVE THINGS ABOUT IT.</that>
     <template>
         <!--<think><set name = "filteringNegMoodCorrected"><star/></set></think>-->
-        That's great <get name = "name"/>! Would you like to learn about another distortion? 
+        That's great <get name = "name"/>! Would you like to learn about another distortion?(yes|no) 
     </template>
 </category>
 
  <!-- ANOTHER DISTORTION yes- choose another distortion -->
  <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>yes</set></pattern>
-   <that>WOULD YOU LIKE TO LEARN ABOUT ANOTHER DISTORTION</that>
+   <that>WOULD YOU LIKE TO LEARN ABOUT ANOTHER DISTORTION?</that>
     <template> 
-        Okay sounds great! Go ahead and pick another from the list. </template>
+        Okay sounds great! Go ahead and pick another from the list.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1
+    </template>
 </category>
 
 <!-- ANOTHER DISTORTION no- say goodbye -->
 <category><pattern><set>no</set></pattern>
-   <that>WOULD YOU LIKE TO LEARN ABOUT ANOTHER DISTORTION</that>
+   <that>WOULD YOU LIKE TO LEARN ABOUT ANOTHER DISTORTION?</that>
     <template> 
-        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! </template>
+        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! 
+    </template>
 </category>
 
   
  <!-- FILTERING no- try another distortion -->
  <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU FEEL LIKE FILTERING APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE FILTERING APPLIES TO YOU?</that>
     <template> 
-        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about. </template>
+        Okay great job! We're narrowing down the list. Go ahead and pick another one to hear more about.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
   
 <!-- ***************************************************POLARIZED THINKING************************************************************* -->   
 <category><pattern>POLARIZED THINKING</pattern>
-    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT</that>-->
+    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT?</that>-->
     <template>
-        Polarized thinking is when you assume everything is either "black-or-white"; there is no middle ground. You put people, situations, and yourself into "either/or" categories to the extent that if something isn't absolutely perfect, it's a failure. Do you feel like polarized thinking applies to you?
+        Polarized thinking is when you assume everything is either "black-or-white" or that there is no middle ground. You put people, situations, and yourself into "either-or" categories to the extent that if something isn't absolutely perfect, it's a failure. Do you feel like polarized thinking applies to you?(yes|no)#image:clrscr,duration:-1
     </template>
 </category>  
   
  <!-- POLARIZED THINKING yes- continue with exercise -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU FEEL LIKE POLARIZED THINKING APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE POLARIZED THINKING APPLIES TO YOU?</that>
     <template> 
-        Great job on identifying a distortion! I know this one can make things pretty tough for you, so I'm glad we get to work on it today. The first thing I want you to do is think about a negative situation you're in now or have faced before. Go ahead and give it a try!   </template>
+        Great job on identifying a distortion! I know this one can make things pretty tough for you, so I'm glad we get to work on it today. The first thing I want you to do is think about a negative situation you're in now or have faced before. Go ahead and give it a try!
+     </template>
 </category>
 
 <category><pattern>*</pattern>
-    <that>GO AHEAD AND GIVE IT A TRY</that>
+    <that>GO AHEAD AND GIVE IT A TRY!</that>
     <template>
         <!--<think><set name = "polarizedNegSituation"><star/></set></think>-->
         Great! Now I want you to describe something you had to try several times before you succeeded.
@@ -111,7 +118,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>NOW I WANT YOU TO DESCRIBE SOMETHING YOU HAD TO TRY SEVERAL TIMES BEFORE YOU SUCCEEDED </that>
+    <that>NOW I WANT YOU TO DESCRIBE SOMETHING YOU HAD TO TRY SEVERAL TIMES BEFORE YOU SUCCEEDED. </that>
     <template>
         <!--<think><set name = "polarizedSuccess"><star/></set></think>-->
         Wow! That's quite an impressive feat. I think it would have taken me much longer to succeed had I been in your situation. Now I would like for you to think of what would happen if you stopped trying to succeed in that situation.
@@ -119,7 +126,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>NOW I WOULD LIKE FOR YOU TO THINK OF WHAT WOULD HAPPEN IF YOU STOPPED TRYING TO SUCCEED IN THAT SITUATION</that>
+    <that>NOW I WOULD LIKE FOR YOU TO THINK OF WHAT WOULD HAPPEN IF YOU STOPPED TRYING TO SUCCEED IN THAT SITUATION.</that>
     <template>
         <!--<think><set name = "polarizedNegOutcome"><star/></set></think>-->
         Excellent! I would now like you to think of what would happen if you kept trying in your present situation and were able to succeed.
@@ -127,7 +134,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>I WOULD NOW LIKE YOU TO THINK OF WHAT WOULD HAPPEN IF YOU KEPT TRYING IN YOUR PRESENT SITUATION AND WERE ABLE TO SUCCEED</that>
+    <that>I WOULD NOW LIKE YOU TO THINK OF WHAT WOULD HAPPEN IF YOU KEPT TRYING IN YOUR PRESENT SITUATION AND WERE ABLE TO SUCCEED.</that>
     <template>
         <!--<think><set name = "polarizedPosOutcome"><star/></set></think>-->
         Great! Hopefully, this thought experiment has helped you to see that stopping now may seem easier or the better course of action, but the reward for continuing to try is worth it. How about you rephrase your original thought in a way so that you will want to keep trying again. 
@@ -136,56 +143,60 @@
 
 <!-- Eventually redirect this to goodbye -->
 <category><pattern>*</pattern>
-    <that>HOW ABOUT YOU REPHRASE YOUR ORIGINAL THOUGHT IN A WAY SO THAT YOU WILL WANT TO KEEP TRYING AGAIN</that>
+    <that>HOW ABOUT YOU REPHRASE YOUR ORIGINAL THOUGHT IN A WAY SO THAT YOU WILL WANT TO KEEP TRYING AGAIN.</that>
     <template>
         <!--<think><set name = "polarizedNegSituationCorrected"><star/></set></think>-->
-        That's great <get name = "name"/>! Good job working on this distortion. Do you want to learn about another one?
+        That's great <get name = "name"/>! Good job working on this distortion. Do you want to learn about another one?(yes|no)
     </template>
 </category>
 
 <!-- ANOTHER DISTORTION yes- choose another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU WANT TO LEARN ABOUT ANOTHER ONE</that>
+   <that>DO YOU WANT TO LEARN ABOUT ANOTHER ONE?</that>
     <template> 
-        Okay sounds great! Go ahead and pick another from the list. </template>
+        Okay sounds great! Go ahead and pick another from the list.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ANOTHER DISTORTION no- say goodbye -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU WANT TO LEARN ABOUT ANOTHER ONE</that>
+   <that>DO YOU WANT TO LEARN ABOUT ANOTHER ONE?</that>
     <template> 
-        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! </template>
+        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! 
+    </template>
 </category>
 
 
  <!-- POLARIZED THINKING no- try another distortion -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU FEEL LIKE POLARIZED THINKING APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE POLARIZED THINKING APPLIES TO YOU?</that>
     <template> 
-        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about. </template>
+        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1
+    </template>
 </category>
 
 <!-- ***************************************************OVERGENERALIZATION************************************************************* --> 
 <category><pattern>OVERGENERALIZATION</pattern>
-    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT</that>-->
+    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT?</that>-->
     <template>
-        Overgeneralization occurs when you come to general conclusions based on a single piece of evidence or happenstance. If something bad happens once, it is bound to happen over and over agin. Do you feel like overgeneralization applies to you?
+        Overgeneralization occurs when you come to general conclusions based on a single piece of evidence or happenstance. If something bad happens once, it is bound to happen over and over agin. Do you feel like overgeneralization applies to you?(yes|no)#image:clrscr,duration:-1
     </template>
 </category>  
 
  <!-- OVERGENERALIZATION yes- continue with exercise -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU FEEL LIKE OVERGENERALIZATION APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE OVERGENERALIZATION APPLIES TO YOU?</that>
     <template> 
-        Way to go in identifying overgeneralization as a cognitive distortion! You're already on the path to better patterns of thought. Tell me about a time you have overgeneralized.  </template>
+        Way to go in identifying overgeneralization as a cognitive distortion! You're already on the path to better patterns of thought. Tell me about a time you have overgeneralized.  
+    </template>
 </category>
 
 <category><pattern>*</pattern>
-    <that>TELL ME ABOUT A TIME YOU HAVE OVERGENERALIZED</that>
+    <that>TELL ME ABOUT A TIME YOU HAVE OVERGENERALIZED.</that>
     <template>
         <!--<think><set name = "overgeneralizationInstance"><star/></set></think>-->
-        Good job! It may be easy to think that a single instance defines you, but that is never the case. You are a multifaceted person who has years of experience and life to define you. you just have to realize that the moment has passed so you can forgive yourself for it. Easier said than done, right? Sometimes reevaluating a situation can help. For example, if your negative thought was 'I didn't do well with that job interview so I'm therefore horrible at job interviews', you can restate that as 'I didn't do so well on that job interview, but I'll be sure to do better next time'. By changing that thought in your mind, you'll start to see how overgeneralizing applies. Try and tell me about the situation again in a way that minimizes overgeneralization. 
+        Good job! It may be easy to think that a single instance defines you, but that is never the case. You are a multifaceted person who has years of experience and life to define you. you just have to realize that the moment has passed so you can forgive yourself for it. Easier said than done, right? Sometimes reevaluating a situation can help. For example, if your negative thought was "I didn't do well with that job interview so I'm therefore horrible at job interviews", you can restate that as 'I didn't do so well on that job interview, but I'll be sure to do better next time'. By changing that thought in your mind, you'll start to see how overgeneralizing applies. Try and tell me about the situation again in a way that minimizes overgeneralization. 
     </template>
 </category>
 
@@ -194,61 +205,63 @@
     <that>TRY AND TELL ME ABOUT THE SITUATION AGAIN IN A WAY THAT MINIMIZES OVERGENERALIZATION. </that>
     <template>
         <!--<think><set name = "overgeneralizationInstanceCorrected"><star/></set></think>-->
-        That's great <get name = "name"/>! Hopefully this exercise helps you alter the way you think for the better. Would you like to work on another distortion?
+        That's great <get name = "name"/>! Hopefully this exercise helps you alter the way you think for the better. Would you like to work on another distortion?(yes|no)
     </template>
 </category>
 
 <!-- ANOTHER DISTORTION yes- choose another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>yes</set></pattern>
-   <that>WOULD YOU LIKE TO WORK ON ANOTHER DISTORTION</that>
+   <that>WOULD YOU LIKE TO WORK ON ANOTHER DISTORTION?</that>
     <template> 
-        Okay sounds great! Go ahead and pick another from the list. </template>
+        Okay sounds great! Go ahead and pick another from the list.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ANOTHER DISTORTION no- say goodbye -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU WANT TO LEARN ABOUT ANOTHER ONE</that>
+   <that>WOULD YOU LIKE TO WORK ON ANOTHER DISTORTION?</that>
     <template> 
-        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! </template>
+        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! 
+    </template>
 </category>
 
 
 <!-- OVERGENERALIZATION no- try another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU FEEL LIKE OVERGENERALIZATION APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE OVERGENERALIZATION APPLIES TO YOU?</that>
     <template> 
-        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about. </template>
+        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ***************************************************JUMPING TO CONCLUSIONS************************************************************* --> 
 <category><pattern>JUMPING TO CONCLUSIONS</pattern>
-    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT</that>-->
+    <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT?</that>-->
     <template>
-        When you jump to conclusions, without any evidence or say so, you know exactly what will happen or what a person is feeling and why they act as they do. Like fortune telling, you feel as though your predictions are fact. Do you feel like jumping to conclusions applies to you?
+        When you jump to conclusions, without any evidence or say so, you know exactly what will happen or what a person is feeling and why they act as they do. Like fortune telling, you feel as though your predictions are fact. Do you feel like jumping to conclusions applies to you?(yes|no)#image:clrscr,duration:-1
     </template>
 </category>  
 
  <!-- JUMPING TO CONCLUSIONS yes- continue with exercise -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU FEEL LIKE JUMPING TO CONCLUSIONS APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE JUMPING TO CONCLUSIONS APPLIES TO YOU?</that>
     <template> 
-        Great job in identifying a cognitive distortion, <get name = "name"/>! When it comes to jumping to conclusions, you could be jumping to a conclusion about a person or situation. Which would you say it is? </template>
+        Great job in identifying a cognitive distortion, <get name = "name"/>! When it comes to jumping to conclusions, you could be jumping to a conclusion about a person or situation. Which would you say it is?(person|situation) 
+    </template>
 </category>
 
-<!-- IMPORTANT: add choice for person/situation on screen here -->
-
 <!-- User decides to talk about a person -->
-<category><pattern>A PERSON</pattern>
-    <that>WHICH WOULD YOU SAY IT IS</that>
+<category><pattern>PERSON</pattern>
+    <that>WHICH WOULD YOU SAY IT IS?</that>
     <template>
         I see. What is it that you are assuming about this person?
     </template>
 </category>  
 
 <category><pattern>*</pattern>
-    <that>WHAT IS IT THAT YOU ARE ASSUMING ABOUT THIS PERSON </that>
+    <that>WHAT IS IT THAT YOU ARE ASSUMING ABOUT THIS PERSON? </that>
     <template>
         <!--<think><set name = "jumpingPersonAssumption"><star/></set></think>-->
         That's great <get name = "name"/>! Now try to think of something else that this person may have been going through to give you that impression. Describe a situation you may be going through to give to someone else the impression that this person is giving you. Be as understanding as possible.
@@ -256,23 +269,23 @@
 </category>
 
 <category><pattern>*</pattern>
-        <that>BE AS UNDERSTANDING AS POSSIBLE </that>
+        <that>BE AS UNDERSTANDING AS POSSIBLE. </that>
     <template>
         <!--<think><set name = "jumpingPersonAssumptionCorrected"><star/></set></think>-->
-        Good job thinking in someone else's shoes. Hopefully this little thought experiment gave you an opportunity to explore other conclusions than the one you jumped to. By conducting thought experiments like this one, you can realize that the worst case scenario is really the least likely. Great work! Do you want to look at another distortion?
+        Good job thinking in someone else's shoes. Hopefully this little thought experiment gave you an opportunity to explore other conclusions than the one you jumped to. By conducting thought experiments like this one, you can realize that the worst case scenario is really the least likely. Great work! Do you want to look at another distortion?(yes|no)
     </template>
 </category>
 
 <!-- User decides to talk about a situation -->
-<category><pattern>A SITUATION</pattern>
-    <that>WHICH WOULD YOU SAY IT IS</that>
+<category><pattern>SITUATION</pattern>
+    <that>WHICH WOULD YOU SAY IT IS?</that>
     <template>
         I see. What about this situation do you assume will happen?
     </template>
 </category>  
 
 <category><pattern>*</pattern>
-    <that>WHAT ABOUT THIS SITUATION DO YOU ASSUME WILL HAPPEN</that>
+    <that>WHAT ABOUT THIS SITUATION DO YOU ASSUME WILL HAPPEN?</that>
     <template>
         <!--<think><set name = "jumpingSituationAssumption"><star/></set></think>-->
         That's great <get name = "name"/>! Now imagine that your assumption is incorrect and you put yourself back into that situation. What happens? Are there any better outcomes?
@@ -280,64 +293,67 @@
 </category>
 
 <category><pattern>*</pattern>
-        <that>ARE THERE ANY BETTER OUTCOMES</that>
+        <that>ARE THERE ANY BETTER OUTCOMES?</that>
     <template>
         <!--<think><set name = "jumpingSituationAssumptionCorrected"><star/></set></think>-->
-        Good job thinking about the situation in a different light. Hopefully this little thought experiment gave you an opportunity to explore other conclusions than the one you jumped to. By conducting thought experiments like this one, you can realize that the worst case scenario is really the least likely. Great work! Do you want to look at another distortion?
+        Good job thinking about the situation in a different light. Hopefully this little thought experiment gave you an opportunity to explore other conclusions than the one you jumped to. By conducting thought experiments like this one, you can realize that the worst case scenario is really the least likely. Great work! Do you want to look at another distortion?(yes|no)
     </template>
 </category>
 
 <!-- ANOTHER DISTORTION yes- choose another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU WANT TO LOOK AT ANOTHER DISTORTION</that>
+   <that>DO YOU WANT TO LOOK AT ANOTHER DISTORTION?</that>
     <template> 
-        Okay sounds great! Go ahead and pick another from the list. </template>
+        Okay sounds great! Go ahead and pick another from the list.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ANOTHER DISTORTION no- say goodbye -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU WANT TO LOOK AT ANOTHER DISTORTION</that>
+   <that>DO YOU WANT TO LOOK AT ANOTHER DISTORTION?</that>
     <template> 
-        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! </template>
+        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! 
+    </template>
 </category>
 
 
 <!-- JUMPING TO CONCLUSIONS no- try another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU FEEL LIKE JUMPING TO CONCLUSIONS APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE JUMPING TO CONCLUSIONS APPLIES TO YOU?</that>
     <template> 
-        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about. </template>
+        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ***************************************************CATASTROPHIZING************************************************************* --> 
 <category><pattern>CATASTROPHIZING</pattern>
     <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT</that>-->
     <template>
-        In this distortion, you expect disaster to strike, no matter what. Otherwise known as "magnifying or minimizing", you might exaggerate insignificant events or minimize more significant events. Do you feel like catastrophizing applies to you?
+        In this distortion, you expect disaster to strike, no matter what. Otherwise known as "magnifying or minimizing", you might exaggerate insignificant events or minimize more significant events. Do you feel like catastrophizing applies to you?(yes|no)#image:clrscr,duration:-1
     </template>
 </category>  
 
  <!-- CATASTROPHIZING yes- continue with exercise -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU FEEL LIKE CATASTROPHIZING APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE CATASTROPHIZING APPLIES TO YOU?</that>
     <template> 
-        Great job in identifying a cognitive distortion, <get name = "name"/>! When it comes to catastophizing, you could be either magnifying a less significant event or minimizing a more significant event. Which do you think you are doing? </template>
+        Great job in identifying a cognitive distortion, <get name = "name"/>! When it comes to catastophizing, you could be either magnifying a less significant event or minimizing a more significant event. Do you think you are magnifying or minimizing?(magnifying|minimizing)
+    </template>
 </category>
 
-<!-- IMPORTANT: add choice for magnifying/minimizing  on screen here -->
 
 <!-- User decides to talk about magnifying a less significant event -->
 <category><pattern>MAGNIFYING</pattern>
-    <that>WHICH DO YOU THINK YOU ARE DOING</that>
+    <that>DO YOU THINK YOU ARE MAGNIFYING OR MINIMIZING?</that>
     <template>
         Good observation! Now that you realize that you are magnifying, let's try and think of a specific time you feel you've done this. Go ahead and tell me about it! 
     </template>
 </category>  
 
 <category><pattern>*</pattern>
-    <that>GO AHEAD AND TELL ME ABOUT IT</that>
+    <that>GO AHEAD AND TELL ME ABOUT IT!</that>
     <template>
         <!--<think><set name = "catastrophizingMagNegSituation"><star/></set></think>-->
         Great! Now I want you to try and evaluate the time you just told me about. Rephrase it in a way in which you minimize the effect of your catastrophic thought.
@@ -345,23 +361,23 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>REPHRASE IT IN A WAY IN WHICH YOU MINIMIZE THE EFFECT OF YOUR CATASTROPHIC THOUGHT</that>
+    <that>REPHRASE IT IN A WAY IN WHICH YOU MINIMIZE THE EFFECT OF YOUR CATASTROPHIC THOUGHT.</that>
     <template>
         <!--<think><set name = "catastrophizinMagNegSituationCorrected"><star/></set></think>-->
-        That's great <get name = "name"/>! Good job. Do you want to hear about another distortion? 
+        That's great <get name = "name"/>! Good job. Do you want to hear about another distortion?(yes|no) 
     </template>
 </category>
 
 <!-- User decides to talk about minimizing a more significnt event -->
 <category><pattern>MINIMIZING</pattern>
-    <that>WHICH DO YOU THINK YOU ARE DOING</that>
+    <that>DO YOU THINK YOU ARE MAGNIFYING OR MINIMIZING?</that>
     <template>
         Good observation! Now that you realize that you are minimizing, let's try and think of a specific time you feel you've done this. Go ahead and tell me all about it! 
     </template>
 </category>  
 
 <category><pattern>*</pattern>
-    <that>GO AHEAD AND TELL ME ALL ABOUT IT</that>
+    <that>GO AHEAD AND TELL ME ALL ABOUT IT!</that>
     <template>
         <!--<think><set name = "catastrophizingMinNegSituation"><star/></set></think>-->
         Great! Now I want you to try and evaluate the time you just told me about. Rephrase it in a way in which you avoid minimizing the good things. 
@@ -369,52 +385,57 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>REPHRASE IT IN A WAY IN WHICH YOU AVOID MINIMIZING THE GOOD THINGS</that>
+    <that>REPHRASE IT IN A WAY IN WHICH YOU AVOID MINIMIZING THE GOOD THINGS.</that>
     <template>
         <!--<think><set name = "catastrophizinMinNegSituationCorrected"><star/></set></think>-->
-        That's great <get name = "name"/>! Good job. Do you want to hear about another distortion? 
+        That's great <get name = "name"/>! Good job. Do you want to hear about another distortion?(yes|no) 
     </template>
 </category>
 
 <!-- ANOTHER DISTORTION yes- choose another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION</that>
+   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION?</that>
     <template> 
-        Okay sounds great! Go ahead and pick another from the list. </template>
+        Okay sounds great! Go ahead and pick another from the list.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ANOTHER DISTORTION no- say goodbye -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION</that>
+   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION?</that>
     <template> 
-        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! </template>
+        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! 
+    </template>
 </category>
 
 
 <!-- CATASTROPHIZING no- try another distortion -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU FEEL LIKE CATASTROPHIZING APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE CATASTROPHIZING APPLIES TO YOU?</that>
     <template> 
-        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about. </template>
+        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
 
 <!-- ***************************************************PERSONALIZATION************************************************************* --> 
 <category><pattern>PERSONALIZATION</pattern>
     <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT</that>-->
     <template>
-        In this case, you believe that everything others do or say is a direct reaction to you. You may also believe that external events are caused in direct relation to something unrelated that you did. Do you feel like personalization applies to you?
+        In this case, you believe that everything others do or say is a direct reaction to you. You may also believe that external events are caused in direct relation to something unrelated that you did. Do you feel like personalization applies to you?(yes|no)#image:clrscr,duration:-1
     </template>
 </category>  
 
  <!-- PERSONALIZATION yes- continue with exercise -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU FEEL LIKE PERSONALIZATION APPLIES TO YOU</that>
-    <template> Great job in identifying personalization as a distortion, <get name = "name"/>! To work through this distortion, I would like you to tell me about a negative situation you have experienced that applies. </template>
+   <that>DO YOU FEEL LIKE PERSONALIZATION APPLIES TO YOU?</that>
+    <template> 
+        Great job in identifying personalization as a distortion, <get name = "name"/>! To work through this distortion, I would like you to tell me about a negative situation you have experienced that applies. 
+    </template>
 </category>
 
 <category><pattern>*</pattern>
-    <that>TO WORK THROUGH THIS DISTORTION, I WOULD LIKE YOU TO TELL ME ABOUT A NEGATIVE SITUATION YOU HAVE EXPERIENCED THAT APPLIES</that>
+    <that>TO WORK THROUGH THIS DISTORTION, I WOULD LIKE YOU TO TELL ME ABOUT A NEGATIVE SITUATION YOU HAVE EXPERIENCED THAT APPLIES.</that>
     <template>
         <!--<think><set name = "personalizationNegSituation"><star/></set></think>-->
         Great! Now I would like you to analyze your negative situation. Identify what about it you think is your fault.
@@ -422,7 +443,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>IDENTIFY WHAT ABOUT IT YOU THINK IS YOUR FAULT</that>
+    <that>IDENTIFY WHAT ABOUT IT YOU THINK IS YOUR FAULT.</that>
     <template>
         <!--<think><set name = "personalizationBlame"><star/></set></think>-->
         I see. I know that it seems like "this is dependent on you, but I want you to think about how this may not be the case. Think of some external factors that make this not dependent on you.
@@ -430,7 +451,7 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>THINK OF SOME EXTERNAL FACTORS THAT MAKE THIS NOT DEPENDENT ON YOU</that>
+    <that>THINK OF SOME EXTERNAL FACTORS THAT MAKE THIS NOT DEPENDENT ON YOU.</that>
     <template>
         <!--<think><set name = "personalizationBlameExternalFactors"><star/></set></think>-->
         Great work! Finally, please rephrase your negative statement in a way that your effect is minimized.
@@ -438,35 +459,40 @@
 </category>
 
 <category><pattern>*</pattern>
-    <that>FINALLY, PLEASE REPHRASE YOUR NEGATIVE STATEMENT IN A WAY THAT YOUR EFFECT IS MINIMIZED</that>
+    <that>FINALLY, PLEASE REPHRASE YOUR NEGATIVE STATEMENT IN A WAY THAT YOUR EFFECT IS MINIMIZED.</that>
     <template>
         <!--<think><set name = "catastrophizinMinNegSituationCorrected"><star/></set></think>-->
-        That's great <get name = "name"/>! Remember what you think about yourself is solely dependent on you. Do you want to hear about another distortion?
+        That's great <get name = "name"/>! Remember what you think about yourself is solely dependent on you. Do you want to hear about another distortion?(yes|no)
     </template>
 </category>
 
 <!-- ANOTHER DISTORTION yes- choose another distortion -->
 <!-- IMPORTANT: show the list of choices here again -->
 <category><pattern><set>yes</set></pattern>
-   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION</that>
+   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION?</that>
     <template> 
-        Okay sounds great! Go ahead and pick another from the list. </template>
+        Okay sounds great! Go ahead and pick another from the list.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1  
+    </template>
 </category>
 
 <!-- ANOTHER DISTORTION no- say goodbye -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION</that>
+   <that>DO YOU WANT TO HEAR ABOUT ANOTHER DISTORTION?</that>
     <template> 
-        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! </template>
+        Sounds good. Great job today. I know we went over a lot, but we will keep reinforcing what you learned in future sessions. I'll see you next time <get name = "name"/>. Goodbye! 
+    </template>
 </category>
 
 
 <!-- PERSONALIZATION no- try another distortion -->
 <category><pattern><set>no</set></pattern>
-   <that>DO YOU FEEL LIKE PERSONALIZATION APPLIES TO YOU</that>
+   <that>DO YOU FEEL LIKE PERSONALIZATION APPLIES TO YOU?</that>
     <template> 
-        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about. </template>
+        Okay great job! We're narrowing down the list of possibilities. Go ahead and pick another one to hear more about.(filtering|polarizedThinking|overgeneralization|jumpingToConclusions|catastrophizing|personalization)#image:distortions.png,duration:-1 
+    </template>
 </category>
+
+<!-- LEFT OFF HERE WITH CODE READY FOR ROBOT -->
 
 <!-- ***************************************************CONTROL FALLACIES************************************************************* --> 
 <category><pattern>CONTROL FALLACIES</pattern>
