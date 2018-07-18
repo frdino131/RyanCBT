@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-  
-  #image:distortions.png,duration:-1
-  #image:clrscr,duration:-1
+
   <!-- leaving that statement commented out so can return to choices if user picks to learn about another one -->
   
   <!-- leaving variables in for now in case chose to do something with them at some point -->
@@ -94,7 +92,7 @@
 
   
 <!-- ***************************************************POLARIZED THINKING************************************************************* -->   
-<category><pattern>POLARIZED THINKING</pattern>
+<category><pattern>POLARIZEDTHINKING</pattern>
     <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT?</that>-->
     <template>
         Polarized thinking is when you assume everything is either "black-or-white" or that there is no middle ground. You put people, situations, and yourself into "either-or" categories to the extent that if something isn't absolutely perfect, it's a failure. Do you feel like polarized thinking applies to you?(yes|no)#image:clrscr,duration:-1
@@ -237,7 +235,7 @@
 </category>
 
 <!-- ***************************************************JUMPING TO CONCLUSIONS************************************************************* --> 
-<category><pattern>JUMPING TO CONCLUSIONS</pattern>
+<category><pattern>JUMPINGTOCONCLUSIONS</pattern>
     <!--<that>WHICH WOULD YOU LIKE TO HEAR MORE ABOUT?</that>-->
     <template>
         When you jump to conclusions, without any evidence or say so, you know exactly what will happen or what a person is feeling and why they act as they do. Like fortune telling, you feel as though your predictions are fact. Do you feel like jumping to conclusions applies to you?(yes|no)#image:clrscr,duration:-1
