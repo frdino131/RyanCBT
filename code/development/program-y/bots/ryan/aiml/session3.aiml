@@ -6,8 +6,17 @@
     <pattern>SESSION3 *</pattern>
     <template>
     	<!-- SET NAME BASED ON CONTROLLER INPUT -->
+		<!-- SEE HOW DOING FOR HUMAN ELEMENT -->
     	<think><set name="name"><star/></set></think>
-    	Hi <get name = "name"/>! Welcome to session three. I hope you are still using your daily mood scale. By now you have most likely finished an entire sheet, so I'm going to have my friend give you another for this coming week. When you are ready to continue, say ready.(ready) 
+    	Hi <get name = "name"/>! Welcome to session three. How are you doing today? 
+    </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>HOW ARE YOU DOING TODAY?</that>
+    <template>
+        Great, let's continue. I hope you are still using your daily mood scale. By now you have most likely finished an entire sheet, so I'm going to have my friend give you another for this coming week. When you are ready to continue, say ready.(ready) 
     </template>
 </category>
 
@@ -80,7 +89,7 @@
     <pattern>READY</pattern>
     <that>WHEN YOU ARE READY TO MOVE ON, LET ME KNOW.</that>
     <template>
-        Good! This may seem silly or confusing, but once we walk through some examples, it will make more sense. To practice, pretend I'm feeling down because I have diabetes. In this situation, this is the A part of the method because it is a fact and something causing my sadness. Of these two choices, which do you think applies to the belief part of the method?(My diabetes is Type II|Diabetes will ruin my life)
+        Good! This may seem silly or confusing, but once we walk through some examples, it will make more sense. To practice, pretend I'm feeling down because I was diagnosed with diabetes. In this situation, this is the A part of the method because it is a fact and something causing my sadness. Of these two choices, which do you think applies to the belief part of the method?(My diabetes is Type II|Diabetes will ruin my life)
    </template>
 </category>
 
@@ -89,7 +98,7 @@
     <pattern><set>no</set></pattern>
     <that>DO YOU HAVE ANY QUESTIONS?</that>
     <template>
-        Good! This may seem silly or confusing, but once we walk through some examples, it will make more sense. To practice, pretend I'm feeling down because I have diabetes. In this situation, this is the A part of the method because it is a fact and something causing my sadness. Of these two choices, which do you think applies to the belief part of the method?(My diabetes is Type II|Diabetes will ruin my life)
+        Good! This may seem silly or confusing, but once we walk through some examples, it will make more sense. To practice, pretend I'm feeling down because I was diagnosed with diabetes. In this situation, this is the A part of the method because it is a fact and something causing my sadness. Of these two choices, which do you think applies to the belief part of the method?(My diabetes is Type II|Diabetes will ruin my life)
     </template>
 </category>
 
@@ -102,7 +111,7 @@
     <pattern>MY DIABETES IS TYPE II</pattern>
     <that>OF THESE TWO CHOICES, WHICH DO YOU THINK APPLIES TO THE BELIEF PART OF THE METHOD?</that>
     <template>
-        Good try <get name = "name"/>, but I think the other answer would've been better. This answer is a fact about my diabetes and would be better for the A part of the method, rather than a belief I have. Let's try the next part. Which statement is a consequence of my thought?(I am feeling very sad thinking about my diabetes|No one can be happy if they are diagnosed with diabetes)
+        Good try <get name = "name"/>, but I think the other answer would've been better. This answer is a fact about my diabetes and would be better for the A part of the method, rather than a belief I hold. Let's try the next part. Which statement is a consequence of my thought?(I am feeling very sad thinking about my diabetes|No one can be happy if they are diagnosed with diabetes)
     </template>
 </category>
   
@@ -115,7 +124,7 @@
     <pattern>DIABETES WILL RUIN MY LIFE</pattern>
     <that>OF THESE TWO CHOICES, WHICH DO YOU THINK APPLIES TO THE BELIEF PART OF THE METHOD?</that>
     <template>
-        Good job <get name = "name"/>! This answer is a belief I have about my diabetes and not an actual fact. Let's try the next part. Which statement is a consequence of my thought?(I am feeling very sad thinking about my diabetes|No one can be happy if they are diagnosed with diabetes)
+        Good job <get name = "name"/>! This answer is a belief I hold about my diabetes and not an actual fact. Let's try the next part. Which statement is a consequence of my thought?(I am feeling very sad thinking about my diabetes|No one can be happy if they are diagnosed with diabetes)
     </template>
 </category>
   
@@ -145,7 +154,7 @@
     <pattern>*</pattern>
     <that>DO YOU HAVE ANY IDEAS ON HOW I COULD DISPUTE MY NEGATIVE THOUGHTS ABOUT HAVING DIABETES?</that>
     <template>
-        Let's continue. Here's one I thought of. "I have diabetes, but can still live a satisfying life." In fact, this statement is equal parts true as it is optimistic. I hope this exercise made it easier to understand the method. You've been doing great <get name = "name"/>! Believe it or not, we've already been through 4 sessions. This wraps up our section about how thoughts affect your mood. To summarize how important thoughts are, I am going to show you a video about the science behind them. 
+        Let's continue. Here's one I thought of. "I now have diabetes, but can still live a satisfying life." In fact, this statement is equal parts true as it is optimistic. I hope this exercise made it easier to understand the method. You've been doing great <get name = "name"/>! Believe it or not, we've already been through 4 sessions. This wraps up our section about how thoughts affect your mood. To summarize how important thoughts are, I am going to show you a video about the science behind them. 
     </template>
 </category>
   
