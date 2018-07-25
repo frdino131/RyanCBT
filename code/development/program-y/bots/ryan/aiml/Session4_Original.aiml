@@ -113,7 +113,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO THE INSTRUCTIONS FOR THE ACTIVITY SHEET MAKE SENSE?</that>
     <template>
-        Awesome! Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today.
+        Awesome! Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today. Placeholder.
     </template>
 </category>
 
@@ -123,9 +123,11 @@
     <pattern><set>no</set></pattern>
     <that>DO THE INSTRUCTIONS FOR THE ACTIVITY SHEET MAKE SENSE?</that>
     <template>
-        Sorry for the confusion! My assistant here will explain any of the details I missed. Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today.    
+        Sorry for the confusion! My assistant here will explain any of the details I missed. Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today.  Placeholder.   
     </template>
 </category>
+
+
 
 
 <!-- **********************FIND OUT HOW TO DO THIS WITH CONDITIONALS FOR EACH PERSON******************  -->
@@ -133,20 +135,26 @@
 <!-- *******************KATIE*************************** -->
 <category>
     <pattern>*</pattern>
-    <that>INSERT THAT STATEMENT HERE.</that>
+    <that>PLACEHOLDER.</that>
     <template>
-        I remember you telling me you really like to bake. In fact, you said you had been a cake decorator before. What occasion were the cakes for?
+    	<condition name='name'>
+	        <li value = "Katie">I remember you telling me you really like to bake. In fact, you said you had been a cake decorator before. What occasion were the cakes for?</li>
+
+	        <li value = "Don"> somthing else. are you okay Don?</li>
+
+	    </condition>
     </template>
 </category>
 
 
 <category>
     <pattern>*</pattern>
-    <that>WHAT OCCASION WERE THE CAKES FOR?</that>
+    <that>What occasion were the cakes for?</that>
     <template>
         That's amazing! I wish I had as much talent as you to decorate cakes. Did you enjoy this activity?
     </template>
 </category>
+
 
 
 <category>
@@ -272,9 +280,9 @@
 <!-- *****************************************DON*************************************** -->
 <category>
     <pattern>*</pattern>
-    <that>INSERT THAT STATEMENT HERE.</that>
+    <that>are you okay Don?</that>
     <template>
-        I remember you telling me you used to farm. What was that like?
+        I remember you telling me you used to farm <get name = "name"/>. What was that like?
     </template>
 </category>
 
