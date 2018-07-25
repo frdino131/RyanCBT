@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-
-<!-- last used was for Linda, so this is Linda's code. until find a way to fix this, will need to change content of the code based on user -->	
   
 
 <!-- CHANGING THE START TO WORK WITH THE CONTROLLER -->
@@ -105,7 +103,7 @@
     <pattern>READY</pattern>
     <that>WHEN YOU ARE READY FOR INSTRUCTIONS, SAY I AM READY.</that>
     <template>
-        Great! There's two parts to the exercise you'll do this week. Each day, look at the list of pleasant activities you have and put a check next to what you did each day. Then, you can total up how many times you did the activity each day. For each activity you do, before you do it, write down the activity you plan to do. In the second column, write the amount of enjoyment you expect to get. Write a percentage to represent how much you will enjoy the activity. 0 percent would mean you won't enjoy the activity at all and 100 percent means you would enjoy the activity very much. After you perform the activity, think back on it and write down the percent of enjoyment you actually experienced. I want you to compare the percentages you write down for each activity and see if you can find any patterns on your own. We will discuss this more next time we meet. Do the instructions for the activity sheet make sense?
+        Great! There's two parts to the exercise you'll do this week. Each day, look at the list of pleasant activities you have and put a check next to what you did each day. Then, you can total up how many times you did the activity each day. For each activity you do, before you do it, write down the activity you plan to do. In the second column, write the amount of enjoyment you expect to get. Write a percentage to represent how much you will enjoy the activity. 0 percent would mean you won't enjoy the activity at all and 100 percent means you would enjoy the activity very much. After you perform the activity, think back on it and write down the percent of enjoyment you actually experienced. I want you to compare the percentages you write down for each activity and see if you can find any patterns on your own. We will discuss this more next time we meet. Do the instructions for the activity sheet make sense?(yes|no)
     </template>
 </category>
 

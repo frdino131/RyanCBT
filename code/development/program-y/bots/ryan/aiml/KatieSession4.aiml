@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-
-<!-- last used was for Linda, so this is Linda's code. until find a way to fix this, will need to change content of the code based on user -->	
   
 
 <!-- CHANGING THE START TO WORK WITH THE CONTROLLER -->
@@ -105,7 +103,7 @@
     <pattern>READY</pattern>
     <that>WHEN YOU ARE READY FOR INSTRUCTIONS, SAY I AM READY.</that>
     <template>
-        Great! There's two parts to the exercise you'll do this week. Each day, look at the list of pleasant activities you have and put a check next to what you did each day. Then, you can total up how many times you did the activity each day. For each activity you do, before you do it, write down the activity you plan to do. In the second column, write the amount of enjoyment you expect to get. Write a percentage to represent how much you will enjoy the activity. 0 percent would mean you won't enjoy the activity at all and 100 percent means you would enjoy the activity very much. After you perform the activity, think back on it and write down the percent of enjoyment you actually experienced. I want you to compare the percentages you write down for each activity and see if you can find any patterns on your own. We will discuss this more next time we meet. Do the instructions for the activity sheet make sense?
+        Great! There's two parts to the exercise you'll do this week. Each day, look at the list of pleasant activities you have and put a check next to what you did each day. Then, you can total up how many times you did the activity each day. For each activity you do, before you do it, write down the activity you plan to do. In the second column, write the amount of enjoyment you expect to get. Write a percentage to represent how much you will enjoy the activity. 0 percent would mean you won't enjoy the activity at all and 100 percent means you would enjoy the activity very much. After you perform the activity, think back on it and write down the percent of enjoyment you actually experienced. I want you to compare the percentages you write down for each activity and see if you can find any patterns on your own. We will discuss this more next time we meet. Do the instructions for the activity sheet make sense?(yes|no)
     </template>
 </category>
 
@@ -115,7 +113,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO THE INSTRUCTIONS FOR THE ACTIVITY SHEET MAKE SENSE?</that>
     <template>
-        Awesome! Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today. I remember you telling me you really like to bake and cook. What do you like to make?    
+        Awesome! Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today. I remember you telling me you really like to bake. In fact, you said you had been a cake decorator before. What occasion were the cakes for?    
     </template>
 </category>
 
@@ -125,20 +123,16 @@
     <pattern><set>no</set></pattern>
     <that>DO THE INSTRUCTIONS FOR THE ACTIVITY SHEET MAKE SENSE?</that>
     <template>
-        Sorry for the confusion! My assistant here will explain any of the details I missed. Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today. I remember you telling me you really like to bake and cook. What do you like to make?    
+        Sorry for the confusion! My assistant here will explain any of the details I missed. Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today. I remember you telling me you really like to bake. In fact, you said you had been a cake decorator before. What occasion were the cakes for?    
     </template>
 </category>
 
 
-
-<!-- *****************************************CHRISTINE*************************************** -->
-
-
 <category>
     <pattern>*</pattern>
-    <that>WHAT DO YOU LIKE TO MAKE?</that>
+    <that>WHAT OCCASION WERE THE CAKES FOR?</that>
     <template>
-        That's amazing! I wish I had as much talent as you. Did you enjoy this activity?
+        That's amazing! I wish I had as much talent as you to decorate cakes. Did you enjoy this activity?
     </template>
 </category>
 
@@ -147,37 +141,37 @@
     <pattern>*</pattern>
     <that>DID YOU ENJOY THIS ACTIVITY?</that>
     <template>
-        I think I would really enjoy it also! Being able to be creative and make something of my own would be so much fun. What about sewing? I remember you said you like to sew and knit. What do you sew?
+        I think I would really enjoy decorating cakes! Being able to be creative and make something of my own would be so much fun. What about painting? I remember you said you are working on painting again. What do you paint?
     </template>
 </category>
 
 
 <category>
     <pattern>*</pattern>
-    <that>WHAT DO YOU SEW?</that>
+    <that>WHAT DO YOU PAINT?</that>
     <template> 
-        That's so great Christine! If I could knit or sew, I would probably make myself a hat since I think I look good in them! Sewing is so much fun and another activity you can really express yourself in. You wouldn't think I would ever be able to sew, but check this video out.
+        That's so great Katie! If I could paint, I think I would paint puppies because they're so cute! Painting is so much fun and another activity you can really express yourself in. Have you ever watched Bob Ross paint? I think he has the best videos and he's so talented too! I really like this clip of him. 
     </template>
 </category>
 
 
 <category>
     <pattern>*</pattern>
-    <that>YOU WOULDN'T THINK I WOULD EVER BE ABLE TO SEW, BUT CHECK THIS VIDEO OUT.</that>
+    <that>I REALLY LIKE THIS CLIP OF HIM.</that>
     <template> 
-        What did you think about the video?#video:RobotSewing.mp4
+        What did you think of the clip?#video:BobRoss.mp4
     </template>
 </category>
 
 
+<!-- INSERT VIDEO CLIP HERE? -->
 <category>
     <pattern>*</pattern>
-    <that>WHAT DID YOU THINK ABOUT THE VIDEO?</that>
+    <that>wHAT DID YOU THINK OF THE CLIP?</that>
     <template> 
-        That's great! I think it's so cool a robot could sew! Maybe my programmers will give me that ability one of these days. I hope this has been a good reminder about activities you enjoy and that it has been able to show you how they brighten your mood. Make sure you take some time to do the things you love over the weekend. I'll see you next time <get name = "name"/>. Goodbye.
+        Isn't it amazing how he paints? I feel like he manages to capture the beauty of our world with his paintings. He makes it look so easy too! My favorite part is his quote about happy accidents. Those are true words to live by. I hope this has been a good reminder about activities you enjoy and that it has been able to show you how they brighten your mood. Make sure you take some time to do the things you love over the weekend. I'll see you next time <get name = "name"/>. Goodbye!
     </template>
 </category>
-
 
 
 </aiml>
