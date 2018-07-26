@@ -113,7 +113,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO THE INSTRUCTIONS FOR THE ACTIVITY SHEET MAKE SENSE?</that>
     <template>
-        Awesome! Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today. Placeholder.
+        Awesome! Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today.
     </template>
 </category>
 
@@ -123,33 +123,35 @@
     <pattern><set>no</set></pattern>
     <that>DO THE INSTRUCTIONS FOR THE ACTIVITY SHEET MAKE SENSE?</that>
     <template>
-        Sorry for the confusion! My assistant here will explain any of the details I missed. Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today.  Placeholder.   
+        Sorry for the confusion! My assistant here will explain any of the details I missed. Try and remember to fill out these new work sheets and the daily mood scale. Most importantly, make sure you do the activities you plan because that's the most important part here! I look forward to hearing what you find with this exercise. While we're on the subject of activities, I want to discuss one that you have told me you enjoy in a previous session and we've possibly touched on today.   
     </template>
 </category>
 
 
+<!-- **********************CONDITIONALS TO BRANCH TO EACH OF THE 4 DIFFERENT PATHS******************  -->
 
 
-<!-- **********************FIND OUT HOW TO DO THIS WITH CONDITIONALS FOR EACH PERSON******************  -->
-
-<!-- *******************KATIE*************************** -->
 <category>
     <pattern>*</pattern>
-    <that>PLACEHOLDER.</that>
+    <that>WHILE WE'RE ON THE SUBJECT OF ACTIVITIES, I WANT TO DISCUSS ONE THAT YOU HAVE TOLD ME YOU ENJOY IN A PREVIOUS SESSION AND WE'VE POSSIBLY TOUCHED ON TODAY.</that>
     <template>
     	<condition name='name'>
 	        <li value = "Katie">I remember you telling me you really like to bake. In fact, you said you had been a cake decorator before. What occasion were the cakes for?</li>
-
-	        <li value = "Don"> somthing else. are you okay Don?</li>
-
+	        <li value = "Linda">I remember you telling me you really like to bake and cook. What do you like to make?</li>
+	        <li value = "Christine">I remember you telling me you really like to bake and cook. What do you like to make?</li>
+	        <li value = "Don">I remember you telling me you used to farm. What was that like?</li>
 	    </condition>
     </template>
 </category>
 
 
+<!-- NOTE: because sentences are the same right now between the different branches, it will confuse program-y (TODO: fix this) -->
+
+<!-- *******************************************************************KATIE******************************************************** -->
+
 <category>
     <pattern>*</pattern>
-    <that>What occasion were the cakes for?</that>
+    <that>WHAT OCCASION WERE THE CAKES FOR?</that>
     <template>
         That's amazing! I wish I had as much talent as you to decorate cakes. Did you enjoy this activity?
     </template>
@@ -185,14 +187,6 @@
 </category>
 
 <!-- *****************************************LINDA*************************************** -->
-<category>
-    <pattern>*</pattern>
-    <that>INSERT THAT STATEMENT HERE.</that>
-    <template>
-        I remember you telling me you really like to bake and cook. What do you like to make?
-    </template>
-</category>
-
 
 <category>
     <pattern>*</pattern>
@@ -232,14 +226,6 @@
 
 
 <!-- *****************************************CHRISTINE*************************************** -->
-<category>
-    <pattern>*</pattern>
-    <that>INSERT THAT STATEMENT HERE.</that>
-    <template>
-        I remember you telling me you really like to bake and cook. What do you like to make?
-    </template>
-</category>
-
 
 <category>
     <pattern>*</pattern>
@@ -278,14 +264,6 @@
 
 
 <!-- *****************************************DON*************************************** -->
-<category>
-    <pattern>*</pattern>
-    <that>are you okay Don?</that>
-    <template>
-        I remember you telling me you used to farm <get name = "name"/>. What was that like?
-    </template>
-</category>
-
 
 <category>
     <pattern>*</pattern>
