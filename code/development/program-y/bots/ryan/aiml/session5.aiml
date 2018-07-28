@@ -1,5 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
+<!-- CHANGING THE START TO WORK WITH THE CONTROLLER -->
+<category>
+    <pattern>SESSION5 *</pattern>
+    <template>
+        <!-- SET NAME BASED ON CONTROLLER INPUT -->
+        <think><set name="name"><star/></set></think>
+        Good morning <get name = "name"/>! Welcome to session five. How was your weekend?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>HOW WAS YOUR WEEKEND?</that>
+    <template>
+        Great! Did you do any pleasant activities like the ones we talked about last time? 
+    </template>
+</category>
+
+
+<!-- YES-TALK ABOUT ACTIVITY -->
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DID YOU DO ANY PLEASANT ACTIVITIES LIKE THE ONES WE TALKED ABOUT LAST TIME?</that>
+    <template>
+        Good I'm glad to hear that! Tell me about what you did and how it went.
+    </template>
+</category>
+
+
+<!-- TALK ABOUT WORKSHEET -->
+<category>
+    <pattern>*</pattern>
+    <that>TELL ME ABOUT WHAT YOU DID AND HOW IT WENT.</that>
+    <template>
+        That sounds amazing <get name = "name"/>! I'm really happy you did that. Hopefully you remembered to record that activity on your pleasant activities worksheet. My hope is that in doing so, you would see that even if we don't think we're going to enjoy an activity beforehand, we often have more fun than we thought we would have. Great work! Since we're still talking about activities, I thought it might be a good idea to discuss goals. When we're depressed, we often loose sight of our goals, so it's critical to set achievable goals. These goals can be unclear or clear. We want to avoid unclear goals because more concrete goals are more attainable. 
+
+    	<!-- RANDOMIZE ORDER OF QUESTIONS -->
+
+		<random>
+            <li> For example, if I were to say my goal is to be a musician, do you think that's a clear or unclear goal?  </li>
+            <li> For example, if I were to say my goal is to spend 10 hours a week practicing my instrument, do you think that's a clear or unclear goal?  </li>
+       	</random>
+
+    </template>
+</category>
+
+
+<!-- NO- TALK ABOUT WORKSHEET INSTEAD -->
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DID YOU DO ANY PLEASANT ACTIVITIES LIKE THE ONES WE TALKED ABOUT LAST TIME?</that>
+    <template>
+        That's okay <get name = "name"/>. You should try and participate in a pleasant activity sometime soon. If you remember to record those on your pleasant activity worksheet, my hope is that in doing so, you would see that even if we don't think we're going to enjoy an activity beforehand, we often have more fun than we thought we would have. Great work! Since we're still talking about activities, I thought it might be a good idea to discuss goals. When we're depressed, we often loose sight of our goals, so it's critical to set achievable goals. These goals can be unclear or clear. We want to avoid unclear goals because more concrete goals are more attainable.
+
+        <!-- RANDOMIZE ORDER OF QUESTIONS -->
+
+		<random>
+            <li> For example, if I were to say my goal is to be a musician, do you think that's a clear or unclear goal?  </li>
+            <li> For example, if I were to say my goal is to spend 10 hours a week practicing my instrument, do you think that's a clear or unclear goal?  </li>
+       	</random>
+
+    </template>
+</category>
+
+
+<!-- QUESTION 1, OPTION RAN- EXAMPLE OF UNCLEAR GOAL- CORRECT ANSWER -->
+<category>
+    <pattern>UNCLEAR GOAL</pattern>
+    <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO BE A MUSICIAN, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Good job! You're exactly right. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week praciticing my instrument to become a musician." Let's try another.
+    </template>
+</category>
+
+
+<!-- QUESTION 1, OPTION RAN- EXAMPLE OF UNCLEAR GOAL- INCORRECT ANSWER -->
+<category>
+    <pattern>CLEAR GOAL</pattern>
+    <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO BE A MUSICIAN, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        I don't think so. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week praciticing my instrument to become a musician." Let's try another.
+    </template>
+</category>
+
+
+<!-- QUESTION 1, OPTION RAN- EXAMPLE OF CLEAR GOAL- CORRECT ANSWER -->
+<category>
+    <pattern>CLEAR GOAL</pattern>
+    <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO SPEND 10 HOURS A WEEK PRACTICING MY INSTRUMENT, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Good job! You're exactly right. Not only did I mention a goal, but I also outlined quantifiable steps to reach that goal. Let's try another.
+    </template>
+</category>
+
+
+<!-- QUESTION 1, OPTION RAN- EXAMPLE OF CLEAR GOAL- INCORRECT ANSWER -->
+<category>
+    <pattern>UNCLEAR GOAL</pattern>
+    <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO SPEND 10 HOURS A WEEK PRACTICING MY INSTRUMENT, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Not quite. I think this is a clear goal because I very clearly said something I wanted to achieve that was very quantifiable. Let's try another.
+    </template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MAYBE TALK ABOUT MUSIC AT THE END TO MAKE IT MORE PERSONALIZED -->
 
 </aiml>
