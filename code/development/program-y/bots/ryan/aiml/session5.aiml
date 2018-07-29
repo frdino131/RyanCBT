@@ -66,6 +66,7 @@
     </template>
 </category>
 
+<!-- *********************************************QUESTION 1 ANSWERS********************************************** -->
 
 <!-- QUESTION 1, OPTION RAN- EXAMPLE OF UNCLEAR GOAL- CORRECT ANSWER -->
 <category>
@@ -73,6 +74,14 @@
     <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO BE A MUSICIAN, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
         Good job! You're exactly right. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week praciticing my instrument to become a musician." Let's try another.
+
+		<!-- RANDOMIZE ORDER OF QUESTIONS -->
+
+		<random>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+       	</random>
+
     </template>
 </category>
 
@@ -83,6 +92,14 @@
     <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO BE A MUSICIAN, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
         I don't think so. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week praciticing my instrument to become a musician." Let's try another.
+
+        <!-- RANDOMIZE ORDER OF QUESTIONS -->
+
+		<random>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+       	</random>
+
     </template>
 </category>
 
@@ -93,6 +110,14 @@
     <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO SPEND 10 HOURS A WEEK PRACTICING MY INSTRUMENT, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
         Good job! You're exactly right. Not only did I mention a goal, but I also outlined quantifiable steps to reach that goal. Let's try another.
+
+        <!-- RANDOMIZE ORDER OF QUESTIONS -->
+
+		<random>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+       	</random>
+
     </template>
 </category>
 
@@ -103,31 +128,277 @@
     <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO SPEND 10 HOURS A WEEK PRACTICING MY INSTRUMENT, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
         Not quite. I think this is a clear goal because I very clearly said something I wanted to achieve that was very quantifiable. Let's try another.
+
+        <!-- RANDOMIZE ORDER OF QUESTIONS -->
+
+		<random>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+       	</random>
+
+    </template>
+</category>
+
+<!-- ************************************************************QUESTION 2 ANSWERS************************************** -->
+
+<!-- QUESTION 2, OPTION RAN- EXAMPLE OF UNCLEAR GOAL- CORRECT ANSWER -->
+<category>
+    <pattern>UNCLEAR GOAL</pattern>
+    <that>IF I WERE TO SAY MY GOAL IS TO BE A BETTER FRIEND, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Perfect! You're right. You're really getting this. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals.
+    </template>
+</category>
+
+
+<!-- QUESTION 2, OPTION RAN- EXAMPLE OF UNCLEAR GOAL- INCORRECT ANSWER -->
+<category>
+    <pattern>CLEAR GOAL</pattern>
+    <that>IF I WERE TO SAY MY GOAL IS TO BE A BETTER FRIEND, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Nope I don't think so. I think this is more of an unclear goal because this goal doesn't have specific steps to reach it. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals. 
+    </template>
+</category>
+
+
+<!-- QUESTION 2, OPTION RAN- EXAMPLE OF CLEAR GOAL- CORRECT ANSWER -->
+<category>
+    <pattern>CLEAR GOAL</pattern>
+    <that>IF I WERE TO SAY MY GOAL IS TO SPEND 3 HOURS A WEEK SPENDING TIME WITH MY FRIENDS, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Perfect! You're right. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals.
+    </template>
+</category>
+
+
+<!-- QUESTION 2, OPTION RAN- EXAMPLE OF CLEAR GOAL- INCORRECT ANSWER -->
+<category>
+    <pattern>UNCLEAR GOAL</pattern>
+    <that>IF I WERE TO SAY MY GOAL IS TO SPEND 3 HOURS A WEEK SPENDING TIME WITH MY FRIENDS, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
+    <template>
+        Nope I don't think so. I think this is more of a clear goal because it outlines specific steps to reach the goal. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals.
+    </template>
+</category>
+
+
+<!-- ASK USER ABOUT THEIR GOALS --> 
+<category>
+    <pattern>*</pattern>
+    <that>SINCE WE'RE TALKING ABOUT GOALS AND PLANNING, WHY DON'T YOU TELL ME SOME OF YOUR GOALS.</that>
+    <template>
+        I see. Do you feel you have any obstacles preventing you from reaching those goals?
+    </template>
+</category>
+
+
+<!-- ASK USER ABOUT OBSTACLES BETWEEN THEM AND THEIR GOALS -->
+<category>
+    <pattern>*</pattern>
+    <that>DO YOU FEEL YOU HAVE ANY OBSTACLES PREVENTING YOU FROM REACHING THOSE GOALS?</that>
+    <template>
+        I can understand how that would be difficult. I know for me, time management is something I really struggle with when it comes to my goals. A good way to help with time management is to assign each item a priority. The highest priority items will come first and if you don't have room for the others in your schedule, you'll just do the highest priority items. Just make sure when you do this, that you make sure you have a balance between what you must do and what you want to do. Now I want to shift our focus slightly and talk about control. When we are depressed, we feel we have no control. Can you think of anything you can do to feel more in control?
+    </template>
+</category>
+
+
+<!-- TALK ABOUT CONTROL -->
+<category>
+    <pattern>*</pattern>
+    <that>CAN YOU THINK OF ANYTHING YOU CAN DO TO FEEL MORE IN CONTROL?</that>
+    <template>
+        Good let's continue. In addition, you can try and look at alternatives in your life. These alternatives can include positive activities, positive social contacts, and more healthy thinking. The main idea to remember here is that there is always another path you can pick in your life. You can choose an alternative activitity that is more positive than what you are currently faced with. Knowing you have choices can really help you feel more in control. In addition, you can think about life as being made up of chunks of time. I want to share with you a quote in regards to this. I'll display it on your tablet.
+    </template>
+</category>
+
+
+<!-- CARL SANDBURG QUOTE TO DISPLAY AND DISCUSS -->
+<!-- IMPORTANT: INSERT THE PICTURE HERE IN WHATEVER SYNTAX (QUOTE.PNG) -->
+<category>
+    <pattern>*</pattern>
+    <that>I'LL DISPLAY IT ON YOUR TABLET.</that>
+    <template>
+        What did you think about that quote?
+    </template>
+</category>
+
+
+<!-- THOUGHTS ABOUT QUOTE, OBSTACLES TO ENJOYING LIFE-->
+<category>
+    <pattern>*</pattern>
+    <that>WHAT DID YOU THINK ABOUT THAT QUOTE?</that>
+    <template>
+        Interesting thought <get name = "name"/>. I liked the last line very much as it's so true. I want you to always be the one deciding what you do with your time and not anyone else or anything. You're a valuable person and your time is equally as important. In regards to the time you have available, what do you feel gets in the way of you enjoying your life more?
+    </template>
+</category>
+
+
+<!-- DEAL WITH OBSTACLES -->
+<category>
+    <pattern>*</pattern>
+    <that>IN REGARDS TO THE TIME YOU HAVE AVAILABLE, WHAT DO YOU FEEL GETS IN THE WAY OF YOU ENJOYING YOUR LIFE MORE?</that>
+    <template>
+        I see. How have you tried to deal with this? Has it helped?
+    </template>
+</category>
+
+
+<!-- YES METHOD HAS HELPED -->
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>HAS IT HELPED?</that>
+    <template>
+        Good I'm happy to hear that. Why do you think it has helped?
+    </template>
+</category>
+
+
+<!-- WHY METHOD HAS HELPED -->
+<category>
+    <pattern>*</pattern>
+    <that>WHY DO YOU THINK IT HAS HELPED?</that>
+    <template>
+        Great that's amazing! I'm glad that helps. Remember that to feel more in control, you can always look at some additional methods. To bring this conversation full circle, what are some alternatives or other options available to you?
+    </template>
+</category>
+
+
+<!--NO METHOD HAS NOT HELPED -->
+<category>
+    <pattern><set>no</set></pattern>
+    <that>HAS IT HELPED?</that>
+    <template>
+        Oh no I'm sorry to hear that. Why do you think it hasn't helped?
+    </template>
+</category>
+
+
+<!--WHY METHOD HAS NOT HELPED -->
+<category>
+    <pattern>*</pattern>
+    <that>WHY DO YOU THINK IT HASN'T HELPED?</that>
+    <template>
+        I see that makes sense. Remember that to feel more in control, you can always look at some additional methods. To bring this conversation full circle, what are some alternatives or other options available to you?
+    </template>
+</category>
+
+
+<!-- ALTERNATIVES -->
+<category>
+    <pattern>*</pattern>
+    <that>TO BRING THIS CONVERSATION FULL CIRCLE, WHAT ARE SOME ALTERNATIVES OR OTHER OPTIONS AVAILABLE TO YOU?</that>
+    <template>
+        Good job! Remember, that no matter what, there will always be alternatives you can turn to in any situation. You've been doing great today! I want to end today with one more pleasant activity we haven't discussed yet: music.
+
+
+<!-- *************************************CONDITIONALS TO BRANCH TO UNIQUE SONG FOR EACH PARTICIPANT ***************************  -->
+
+    	<condition name='name'>
+	        <li value = "Katie">I remember you telling me you really like Josh Groban. Let's listen to one of his songs.</li>
+	        <li value = "Linda">I remember you telling me you really like to classical music. Let's listen to a piece by Bach.</li>
+	        <li value = "Christine">I thought you might really enjoy this song.</li>
+	        <li value = "Don">I remember you telling me you like bluegrass music. Here's a song I thought you might like.</li>
+	    </condition>
+
+
+    </template>
+</category>
+
+
+<!-- ************************************************************ KATIE ****************************************************** -->
+
+<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (JOSH.MP3)  -->
+
+<!-- LISTEN TO SONG -->
+<category>
+    <pattern>*</pattern>
+    <that>LET'S LISTEN TO ONE OF HIS SONGS.</that>
+    <template>
+        How did you like the song and how did it make you feel?
+    </template>
+</category>
+
+
+<!-- HOW SONG MADE THEM FEEL  -->
+<category>
+    <pattern>*</pattern>
+    <that>HOW DID YOU LIKE THE SONG AND HOW DID IT MAKE YOU FEEL?</that>
+    <template>
+        That's great Katie! I feel like his vocals are so powerfull. I love his voice. This session is actually our last one about how our activities affect our moods. Hopefully you've learned that as you spend your time in a more satisfying way, your life will become more satisfying too. We can build pleasant activities into our life plan to help us feel less distressed and emotionally healthier. And the better you feel, the more you can do for yourself and others. I'll see you next time. Goodbye.
+    </template>
+</category>
+
+
+<!-- ******************************************************* LINDA ************************************************************* -->
+
+<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (BACH.MP3)  -->
+
+<!-- LISTEN TO SONG -->
+<category>
+    <pattern>*</pattern>
+    <that>LET'S LISTEN TO A PIECE BY BACH.</that>
+    <template>
+        How did that piece make you feel?
+    </template>
+</category>
+
+
+<!-- HOW SONG MADE THEM FEEL  -->
+<category>
+    <pattern>*</pattern>
+    <that>HOW DID THAT PIECE MAKE YOU FEEL?</that>
+    <template>
+        That's great Linda! Classical music is so beautiful. I love the quote that it expresses that which cannot be said and that which refuses to remain silent. This session is actually our last one about how our activities affect our moods. Hopefully you've learned that as you spend your time in a more satisfying way, your life will become more satisfying too. We can build pleasant activities into our life plan to help us feel less distressed and emotionally healthier. And the better you feel, the more you can do for yourself and others. I'll see you next time. Goodbye.
+    </template>
+</category>
+
+
+<!-- *************************************************** CHRISTINE *************************************************************** -->
+
+<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (BUBLE.MP3)  -->
+
+<!-- LISTEN TO SONG -->
+<category>
+    <pattern>*</pattern>
+    <that>I THOUGHT YOU MIGHT REALLY ENJOY THIS SONG.</that>
+    <template>
+        What did you think of the song? How did the song make you feel?
+    </template>
+</category>
+
+
+<!-- HOW SONG MADE THEM FEEL  -->
+<category>
+    <pattern>*</pattern>
+    <that>HOW DID THE SONG MAKE YOU FEEL?</that>
+    <template>
+        That's great Christine! I absolutely love this type of music. It makes me so happy. This session is actually our last one about how our activities affect our moods. Hopefully you've learned that as you spend your time in a more satisfying way, your life will become more satisfying too. We can build pleasant activities into our life plan to help us feel less distressed and emotionally healthier. And the better you feel, the more you can do for yourself and others. I'll see you next time. Goodbye.
     </template>
 </category>
 
 
 
+<!-- ******************************************************** DON ************************************************************* -->
+
+<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (RALPH.MP3)  -->
+
+<!-- LISTEN TO SONG -->
+<category>
+    <pattern>*</pattern>
+    <that>HERE'S A SONG I THOUGHT YOU MIGHT LIKE.</that>
+    <template>
+        What did you think of the song and how did it make you feel?
+    </template>
+</category>
 
 
+<!-- HOW SONG MADE THEM FEEL  -->
+<category>
+    <pattern>*</pattern>
+    <that>WHAT DID YOU THINK OF THE SONG AND HOW DID IT MAKE YOU FEEL?</that>
+    <template>
+        That's great Don! I absolutely love this type of music. It makes me so happy. This session is actually our last one about how our activities affect our moods. Hopefully you've learned that as you spend your time in a more satisfying way, your life will become more satisfying too. We can build pleasant activities into our life plan to help us feel less distressed and emotionally healthier. And the better you feel, the more you can do for yourself and others. I'll see you next time. Goodbye.
+    </template>
+</category>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- MAYBE TALK ABOUT MUSIC AT THE END TO MAKE IT MORE PERSONALIZED -->
 
 </aiml>
