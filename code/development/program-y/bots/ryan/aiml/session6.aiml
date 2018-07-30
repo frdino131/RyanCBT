@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- CHANGING THE START TO WORK WITH THE CONTROLLER -->
+<category>
+    <pattern>SESSION6 *</pattern>
+    <template>
+        <!-- SET NAME BASED ON CONTROLLER INPUT -->
+        <think><set name="name"><star/></set></think>
+        Hello <get name = "name"/>! Welcome to session six. Has anything exciting happened since we last talked?
+    </template>
+</category>
+
+
+
+
+
+</aiml>
