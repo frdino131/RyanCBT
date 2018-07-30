@@ -16,7 +16,7 @@
     <pattern>*</pattern>
     <that>HOW WAS YOUR WEEKEND?</that>
     <template>
-        Great! Did you do any pleasant activities like the ones we talked about last time? 
+        Great! Did you do any pleasant activities like the ones we talked about last time?(yes|no) 
     </template>
 </category>
 
@@ -41,8 +41,8 @@
     	<!-- RANDOMIZE ORDER OF QUESTIONS -->
 
 		<random>
-            <li> For example, if I were to say my goal is to be a musician, do you think that's a clear or unclear goal?  </li>
-            <li> For example, if I were to say my goal is to spend 10 hours a week practicing my instrument, do you think that's a clear or unclear goal?  </li>
+            <li> For example, if I were to say my goal is to be a musician, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
+            <li> For example, if I were to say my goal is to spend 10 hours a week practicing my instrument, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
        	</random>
 
     </template>
@@ -59,8 +59,8 @@
         <!-- RANDOMIZE ORDER OF QUESTIONS -->
 
 		<random>
-            <li> For example, if I were to say my goal is to be a musician, do you think that's a clear or unclear goal?  </li>
-            <li> For example, if I were to say my goal is to spend 10 hours a week practicing my instrument, do you think that's a clear or unclear goal?  </li>
+            <li> For example, if I were to say my goal is to be a musician, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
+            <li> For example, if I were to say my goal is to spend 10 hours a week practicing my instrument, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
        	</random>
 
     </template>
@@ -78,8 +78,8 @@
 		<!-- RANDOMIZE ORDER OF QUESTIONS -->
 
 		<random>
-            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
-            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
        	</random>
 
     </template>
@@ -96,8 +96,8 @@
         <!-- RANDOMIZE ORDER OF QUESTIONS -->
 
 		<random>
-            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
-            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
        	</random>
 
     </template>
@@ -114,8 +114,8 @@
         <!-- RANDOMIZE ORDER OF QUESTIONS -->
 
 		<random>
-            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
-            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
        	</random>
 
     </template>
@@ -132,8 +132,8 @@
         <!-- RANDOMIZE ORDER OF QUESTIONS -->
 
 		<random>
-            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?  </li>
-            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?  </li>
+            <li> If I were to say my goal is to be a better friend, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
+            <li> If I were to say my goal is to spend 3 hours a week spending time with my friends, do you think that's a clear or unclear goal?(unclear goal|clear goal)</li>
        	</random>
 
     </template>
@@ -186,7 +186,7 @@
     <pattern>*</pattern>
     <that>SINCE WE'RE TALKING ABOUT GOALS AND PLANNING, WHY DON'T YOU TELL ME SOME OF YOUR GOALS.</that>
     <template>
-        I see. Do you feel you have any obstacles preventing you from reaching those goals?
+        I see. What are some obstacles you feel are preventing you from reaching those goals?
     </template>
 </category>
 
@@ -194,7 +194,7 @@
 <!-- ASK USER ABOUT OBSTACLES BETWEEN THEM AND THEIR GOALS -->
 <category>
     <pattern>*</pattern>
-    <that>DO YOU FEEL YOU HAVE ANY OBSTACLES PREVENTING YOU FROM REACHING THOSE GOALS?</that>
+    <that>WHAT ARE SOME OBSTACLES YOU FEEL ARE PREVENTING YOU FROM REACHING THOSE GOALS?</that>
     <template>
         I can understand how that would be difficult. I know for me, time management is something I really struggle with when it comes to my goals. A good way to help with time management is to assign each item a priority. The highest priority items will come first and if you don't have room for the others in your schedule, you'll just do the highest priority items. Just make sure when you do this, that you make sure you have a balance between what you must do and what you want to do. Now I want to shift our focus slightly and talk about control. When we are depressed, we feel we have no control. Can you think of anything you can do to feel more in control?
     </template>
@@ -212,12 +212,11 @@
 
 
 <!-- CARL SANDBURG QUOTE TO DISPLAY AND DISCUSS -->
-<!-- IMPORTANT: INSERT THE PICTURE HERE IN WHATEVER SYNTAX (QUOTE.PNG) -->
 <category>
     <pattern>*</pattern>
     <that>I'LL DISPLAY IT ON YOUR TABLET.</that>
     <template>
-        What did you think about that quote?
+        What did you think about that quote?#image:Quote.jpeg,duration:-1
     </template>
 </category>
 
@@ -227,7 +226,7 @@
     <pattern>*</pattern>
     <that>WHAT DID YOU THINK ABOUT THAT QUOTE?</that>
     <template>
-        Interesting thought <get name = "name"/>. I liked the last line very much as it's so true. I want you to always be the one deciding what you do with your time and not anyone else or anything. You're a valuable person and your time is equally as important. In regards to the time you have available, what do you feel gets in the way of you enjoying your life more?
+        Interesting thought <get name = "name"/>. I liked the last line very much as it's so true. I want you to always be the one deciding what you do with your time and not anyone else or anything. You're a valuable person and your time is equally as important. In regards to the time you have available, what do you feel gets in the way of you enjoying your life more?#image:clrscr,duration:-1
     </template>
 </category>
 
@@ -237,7 +236,7 @@
     <pattern>*</pattern>
     <that>IN REGARDS TO THE TIME YOU HAVE AVAILABLE, WHAT DO YOU FEEL GETS IN THE WAY OF YOU ENJOYING YOUR LIFE MORE?</that>
     <template>
-        I see. How have you tried to deal with this? Has it helped?
+        I see. How have you tried to deal with this? Has it helped?(yes|no)
     </template>
 </category>
 
@@ -306,14 +305,13 @@
 
 <!-- ************************************************************ KATIE ****************************************************** -->
 
-<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (JOSH.MP3)  -->
 
 <!-- LISTEN TO SONG -->
 <category>
     <pattern>*</pattern>
     <that>LET'S LISTEN TO ONE OF HIS SONGS.</that>
     <template>
-        How did you like the song and how did it make you feel?
+        How did you like the song and how did it make you feel?#video:Josh.mp4
     </template>
 </category>
 
@@ -330,14 +328,13 @@
 
 <!-- ******************************************************* LINDA ************************************************************* -->
 
-<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (BACH.MP3)  -->
 
 <!-- LISTEN TO SONG -->
 <category>
     <pattern>*</pattern>
     <that>LET'S LISTEN TO A PIECE BY BACH.</that>
     <template>
-        How did that piece make you feel?
+        How did that piece make you feel?#video:Bach.mp4
     </template>
 </category>
 
@@ -354,14 +351,13 @@
 
 <!-- *************************************************** CHRISTINE *************************************************************** -->
 
-<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (BUBLE.MP3)  -->
 
 <!-- LISTEN TO SONG -->
 <category>
     <pattern>*</pattern>
     <that>I THOUGHT YOU MIGHT REALLY ENJOY THIS SONG.</that>
     <template>
-        What did you think of the song? How did the song make you feel?
+        What did you think of the song? How did the song make you feel?#video:Buble.mp4
     </template>
 </category>
 
@@ -379,14 +375,13 @@
 
 <!-- ******************************************************** DON ************************************************************* -->
 
-<!-- IMPORTANT: ADD SYNTAX TO THIS FOR MUSIC CLIP (RALPH.MP3)  -->
 
 <!-- LISTEN TO SONG -->
 <category>
     <pattern>*</pattern>
     <that>HERE'S A SONG I THOUGHT YOU MIGHT LIKE.</that>
     <template>
-        What did you think of the song and how did it make you feel?
+        What did you think of the song and how did it make you feel?#video:Ralph.mp4
     </template>
 </category>
 
