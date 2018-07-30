@@ -73,7 +73,7 @@
     <pattern>UNCLEAR GOAL</pattern>
     <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO BE A MUSICIAN, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
-        Good job! You're exactly right. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week praciticing my instrument to become a musician." Let's try another.
+        Good job! You're exactly right. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week practicing my instrument to become a musician." Let's try another.
 
 		<!-- RANDOMIZE ORDER OF QUESTIONS -->
 
@@ -91,7 +91,7 @@
     <pattern>CLEAR GOAL</pattern>
     <that>FOR EXAMPLE, IF I WERE TO SAY MY GOAL IS TO BE A MUSICIAN, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
-        I don't think so. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week praciticing my instrument to become a musician." Let's try another.
+        I don't think so. I said that I want to be a musician, but I'm not outlining any exact steps to reach that goal. It would be better for me to say something like "I will spend 10 hours a week practicing my instrument to become a musician." Let's try another.
 
         <!-- RANDOMIZE ORDER OF QUESTIONS -->
 
@@ -146,7 +146,7 @@
     <pattern>UNCLEAR GOAL</pattern>
     <that>IF I WERE TO SAY MY GOAL IS TO BE A BETTER FRIEND, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
-        Perfect! You're right. You're really getting this. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals.
+        Perfect! You're right. You're really getting this. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we are talking about goals and planning, you should tell me some of your goals.
     </template>
 </category>
 
@@ -156,7 +156,7 @@
     <pattern>CLEAR GOAL</pattern>
     <that>IF I WERE TO SAY MY GOAL IS TO BE A BETTER FRIEND, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
-        Nope I don't think so. I think this is more of an unclear goal because this goal doesn't have specific steps to reach it. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals. 
+        Nope I don't think so. I think this is more of an unclear goal because this goal doesn't have specific steps to reach it. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we are talking about goals and planning, you should tell me some of your goals. 
     </template>
 </category>
 
@@ -166,7 +166,7 @@
     <pattern>CLEAR GOAL</pattern>
     <that>IF I WERE TO SAY MY GOAL IS TO SPEND 3 HOURS A WEEK SPENDING TIME WITH MY FRIENDS, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
-        Perfect! You're right. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals.
+        Perfect! You're right. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we are talking about goals and planning, you should tell me some of your goals.
     </template>
 </category>
 
@@ -176,7 +176,7 @@
     <pattern>UNCLEAR GOAL</pattern>
     <that>IF I WERE TO SAY MY GOAL IS TO SPEND 3 HOURS A WEEK SPENDING TIME WITH MY FRIENDS, DO YOU THINK THAT'S A CLEAR OR UNCLEAR GOAL?</that>
     <template>
-        Nope I don't think so. I think this is more of a clear goal because it outlines specific steps to reach the goal. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we're talking about goals and planning, why don't you tell me some of your goals.
+        Nope I don't think so. I think this is more of a clear goal because it outlines specific steps to reach the goal. Not only are clear goals important, but you want to also try and set realistic goals. Keep in mind that what is realistic at one point may be unrealistic at another time. If you feel you can't meet most of your goals, they're probably unrealistic for that time. You can make it more realistic you'll achieve them by developing a plan. You cana break down large goals into smaller steps, for example. Since we are talking about goals and planning, you should tell me some of your goals.
     </template>
 </category>
 
@@ -184,7 +184,7 @@
 <!-- ASK USER ABOUT THEIR GOALS --> 
 <category>
     <pattern>*</pattern>
-    <that>SINCE WE'RE TALKING ABOUT GOALS AND PLANNING, WHY DON'T YOU TELL ME SOME OF YOUR GOALS.</that>
+    <that>SINCE WE ARE TALKING ABOUT GOALS AND PLANNING, YOU SHOULD TELL ME SOME OF YOUR GOALS.</that>
     <template>
         I see. What are some obstacles you feel are preventing you from reaching those goals?
     </template>
