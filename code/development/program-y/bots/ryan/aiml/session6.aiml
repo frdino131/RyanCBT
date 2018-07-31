@@ -12,6 +12,35 @@
 </category>
 
 
+<!--can I add anything in here at the start to mix this up and not jump right into the session? -->
+<category>
+    <pattern>*</pattern>
+    <template>
+        Great! As I mentioned last time, we're going to start working on how contacts with people affect our mood. We know that higher levels of depression are related to less contact with people, talking less, and being less assertive. The question is, then, does depression cause people to be less sociable or does being less sociable cause depression in people. Which do you think it is?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>WHICH DO YOU THINK IT IS?</that
+    <template>
+        Interesting observation! This is sort of a trick question, because it is likely both of these things contribute to the outcome. When we feel down, we are less likely to want to socialize. But, not having contact with people takes away from us a good source of happiness, so we become more depressed. When we feel depressed, we do even fewer things with people. This continues untilwe are so depressed that we spend most of our time alone. In other words, this is a viscious cycle that is difficult to break once started. This is why social support is so important. 
+    </template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
