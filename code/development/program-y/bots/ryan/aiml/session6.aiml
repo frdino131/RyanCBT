@@ -12,9 +12,12 @@
 </category>
 
 
-<!--can I add anything in here at the start to mix this up and not jump right into the session? -->
+<!--can I add anything in here at the start to mix this up and not jump right into the session? (also maybe put video here at start somewhere) -->
+
+
 <category>
     <pattern>*</pattern>
+    <that>HAS ANYTHING EXCITING HAPPENED SINCE WE LAST TALKED?</that>
     <template>
         Great! As I mentioned last time, we're going to start working on how contacts with people affect our mood. We know that higher levels of depression are related to less contact with people, talking less, and being less assertive. The question is, then, does depression cause people to be less sociable or does being less sociable cause depression in people. Which do you think it is?
     </template>
@@ -25,21 +28,59 @@
     <pattern>*</pattern>
     <that>WHICH DO YOU THINK IT IS?</that
     <template>
-        Interesting observation! This is sort of a trick question, because it is likely both of these things contribute to the outcome. When we feel down, we are less likely to want to socialize. But, not having contact with people takes away from us a good source of happiness, so we become more depressed. When we feel depressed, we do even fewer things with people. This continues untilwe are so depressed that we spend most of our time alone. In other words, this is a viscious cycle that is difficult to break once started. This is why social support is so important. 
+        Interesting observation! This is sort of a trick question, because it is likely both of these things contribute to the outcome. When we feel down, we are less likely to want to socialize. But, not having contact with people takes away from us a good source of happiness, so we become more depressed. When we feel depressed, we do even fewer things with people. This continues until we are so depressed that we spend most of our time alone. In other words, this is a viscous cycle that is difficult to break once started. This is why social support is so important. Your social support system includes those around you that share moments of your life such as your family, friends, and co-workers. Stronger support systems allow us to better face tough situations. In thinking about this, we should consider your own support system. Who do you think are some key members of your circle of support?
     </template>
 </category>
 
 
+<category>
+    <pattern>*</pattern>
+    <that>WHO DO YOU THINK ARE SOME KEY MEMBERS OF YOUR CIRCLE OF SUPPORT?</that>
+    <template>
+        I see. That's fantastic! Having people close to us to lean on can be so helpful. What about the size of your support circle? Do you feel like you have a big enough support system?(yes|no)
+    </template>
+</category>
 
 
+<!-- YES- SUPPORT SYSTEM BIG ENOUGH -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU FEEL LIKE YOU HAVE A BIG ENOUGH SUPPORT SYSTEM?</that>
+    <template>
+        Great I'm happy to hear that! If your support system is of good size, we should strive to appreciate it and keep it going. There's several ways you can keep it healthy. The most important part is keeping in contact with others. This can happen in person, over the phone, or through the internet. Another thing you can do is to plan activities with those in your social system. For example, if you and your friends really enjoy reading books, you could start a book club. Are there any activities you do with the people in your support system? If you don't have any, can you think of any you might want to start? 
+    </template>
+</category>
 
 
+<category>
+    <pattern>*</pattern>
+    <that>IF YOU DON'T HAVE ANY, CAN YOU THINK OF ANY YOU MIGHT WANT TO START?</that>
+    <template>
+        Great! Let's continue. Doing activities with people in your support system is so important. Not only does it strengthen bonds, but it also gives an opportunity to grow your system. If you do something you really like while in the company of others, you are more likely to be in a better mood and be friendlier to others. Being friendlier gives you a chance to meet others and get to know people that share a common interest. Additionally, since the main focus is the activity you're doing, and not just meeting others, there's less pressure for you to feel like you have to interact. Bonds can form more naturally in this setting. It is also important to keep in mind that sometimes, the people around us don't always fit into our system and tend to form more negative relationships with us. We can improve the situation for ourselves by being more assertive, setting limits, and distancing ourselves from overly negative relationships. In regards to these positive and negative relationships, we can focus on how our thoughts, expectations, behaviors, and feelings interact when we are with others.
+    </template>
+</category>
 
 
+<!-- NO- SUPPORT SYSTEM NOT BIG ENOUGH -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU FEEL LIKE YOU HAVE A BIG ENOUGH SUPPORT SYSTEM?</that>
+    <template>
+        That's okay! There's plenty of ways to strengthen and grow your support system. For example, you can do something you really like doing while in the company of others. As an example, if you enjoy painting, you could go to a painting class. If you do something you really like while in the company of others, you are more likely to be in a better mood and be friendlier to others. Being friendlier gives you a chance to meet others and get to know people that share a common interest. Additionally, since the main focus is the activity you're doing, and not just meeting others, there's less pressure for you to feel like you have to interact. Bonds can form more naturally in this setting. Can you think of any activities you could do with others to grow your system?
+    </template>
+    </template>
+</category>
 
 
-
-
+<category>
+    <pattern>*</pattern>
+    <that>CAN YOU THINK OF ANY ACTIVITIES YOU COULD DO WITH OTHERS TO GROW YOUR SYSTEM?</that>
+    <template>
+        I see. Once you've grown your system, you should strive to appreciate it and keep it going. There's several ways you can keep it healthy. The most important part is keeping in contact with others. This can happen in person, over the phone, or through the internet. Another thing you can do is to plan activities with those in your social system. The more time you spend with people, the stronger relationships will grow. It is also important to keep in mind that sometimes, the people around us don't always fit into our system and tend to form more negative relationships with us. We can improve the situation for ourselves by being more assertive, setting limits, and distancing ourselves from overly negative relationships. In regards to these positive and negative relationships, we can focus on how our thoughts, expectations, behaviors, and feelings interact when we are with others.
+    </template>
+</category>
 
 
 
