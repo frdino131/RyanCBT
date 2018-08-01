@@ -7,26 +7,43 @@
     <template>
         <!-- SET NAME BASED ON CONTROLLER INPUT -->
         <think><set name="name"><star/></set></think>
-        Hello <get name = "name"/>! Welcome to session six. Has anything exciting happened since we last talked?
+        Hello <get name = "name"/>! Welcome to session six. What's new with you since we last talked?
     </template>
 </category>
 
 
-<!--can I add anything in here at the start to mix this up and not jump right into the session? (also maybe put video here at start somewhere) -->
-
-
 <category>
     <pattern>*</pattern>
-    <that>HAS ANYTHING EXCITING HAPPENED SINCE WE LAST TALKED?</that>
+    <that>WHAT'S NEW WITH YOU SINCE WE LAST TALKED?</that>
     <template>
-        Great! As I mentioned last time, we're going to start working on how contacts with people affect our mood. We know that higher levels of depression are related to less contact with people, talking less, and being less assertive. The question is, then, does depression cause people to be less sociable or does being less sociable cause depression in people. Which do you think it is?
+        Great! As I mentioned last time, we're going to start working on how contacts with people affect our mood. To demonstrate this, I want to show you a video about how interactions between people work on a physical level. 
+    </template>
+</category>
+
+
+<!-- SHOW VIDEO -->
+<category>
+    <pattern>*</pattern>
+    <that>TO DEMONSTRATE THIS, I WANT TO SHOW YOU A VIDEO ABOUT HOW INTERACTIONS BETWEEN PEOPLE WORK ON A PHYSICAL LEVEL.</that>
+    <template>
+        Do you have any thoughts on the video?#video:Emotions.mp4
+    </template>
+</category>
+
+
+<!-- THOUGHTS ON VIDEO -->
+<category>
+    <pattern>*</pattern>
+    <that>DO YOU HAVE ANY THOUGHTS ON THE VIDEO?</that>
+    <template>
+        That's great! I really like the idea of mirror neurons. It's fascinating to think that the neurons in our brain fire when watching someone perform an action. It also explains how it's possible that interactions with others can truly affect us. In fact, we know that higher levels of depression are related to less contact with people, talking less, and being less assertive. The question is, then, does depression cause people to be less sociable or does being less sociable cause depression in people. Which do you think it is?
     </template>
 </category>
 
 
 <category>
     <pattern>*</pattern>
-    <that>WHICH DO YOU THINK IT IS?</that
+    <that>WHICH DO YOU THINK IT IS?</that>
     <template>
         Interesting observation! This is sort of a trick question, because it is likely both of these things contribute to the outcome. When we feel down, we are less likely to want to socialize. But, not having contact with people takes away from us a good source of happiness, so we become more depressed. When we feel depressed, we do even fewer things with people. This continues until we are so depressed that we spend most of our time alone. In other words, this is a viscous cycle that is difficult to break once started. This is why social support is so important. Your social support system includes those around you that share moments of your life such as your family, friends, and co-workers. Stronger support systems allow us to better face tough situations. In thinking about this, we should consider your own support system. Who do you think are some key members of your circle of support?
     </template>
@@ -57,7 +74,7 @@
     <pattern>*</pattern>
     <that>IF YOU DON'T HAVE ANY, CAN YOU THINK OF ANY YOU MIGHT WANT TO START?</that>
     <template>
-        Great! Let's continue. Doing activities with people in your support system is so important. Not only does it strengthen bonds, but it also gives an opportunity to grow your system. If you do something you really like while in the company of others, you are more likely to be in a better mood and be friendlier to others. Being friendlier gives you a chance to meet others and get to know people that share a common interest. Additionally, since the main focus is the activity you're doing, and not just meeting others, there's less pressure for you to feel like you have to interact. Bonds can form more naturally in this setting. It is also important to keep in mind that sometimes, the people around us don't always fit into our system and tend to form more negative relationships with us. We can improve the situation for ourselves by being more assertive, setting limits, and distancing ourselves from overly negative relationships. In regards to these positive and negative relationships, we can focus on how our thoughts, expectations, behaviors, and feelings interact when we are with others.
+        Great! Let's continue. Doing activities with people in your support system is so important. Not only does it strengthen bonds, but it also gives an opportunity to grow your system. If you do something you really like while in the company of others, you are more likely to be in a better mood and be friendlier to others. Being friendlier gives you a chance to meet others and get to know people that share a common interest. Additionally, since the main focus is the activity you're doing, and not just meeting others, there's less pressure for you to feel like you have to interact. Bonds can form more naturally in this setting. It is also important to keep in mind that sometimes, the people around us don't always fit into our system and tend to form more negative relationships with us. We can improve the situation for ourselves by being more assertive, setting limits, and distancing ourselves from overly negative relationships. In regards to these positive and negative relationships, we can focus on how our thoughts, expectations, behaviors, and feelings interact when we are with others. Certain thoughts can make you feel more comfortable with others. For example, if I thought will this person be a good friend to me, what's another way you could rephrase this thought to make me more comfortable in the situation? 
     </template>
 </category>
 
@@ -70,7 +87,6 @@
     <template>
         That's okay! There's plenty of ways to strengthen and grow your support system. For example, you can do something you really like doing while in the company of others. As an example, if you enjoy painting, you could go to a painting class. If you do something you really like while in the company of others, you are more likely to be in a better mood and be friendlier to others. Being friendlier gives you a chance to meet others and get to know people that share a common interest. Additionally, since the main focus is the activity you're doing, and not just meeting others, there's less pressure for you to feel like you have to interact. Bonds can form more naturally in this setting. Can you think of any activities you could do with others to grow your system?
     </template>
-    </template>
 </category>
 
 
@@ -78,11 +94,85 @@
     <pattern>*</pattern>
     <that>CAN YOU THINK OF ANY ACTIVITIES YOU COULD DO WITH OTHERS TO GROW YOUR SYSTEM?</that>
     <template>
-        I see. Once you've grown your system, you should strive to appreciate it and keep it going. There's several ways you can keep it healthy. The most important part is keeping in contact with others. This can happen in person, over the phone, or through the internet. Another thing you can do is to plan activities with those in your social system. The more time you spend with people, the stronger relationships will grow. It is also important to keep in mind that sometimes, the people around us don't always fit into our system and tend to form more negative relationships with us. We can improve the situation for ourselves by being more assertive, setting limits, and distancing ourselves from overly negative relationships. In regards to these positive and negative relationships, we can focus on how our thoughts, expectations, behaviors, and feelings interact when we are with others.
+        I see. Once you've grown your system, you should strive to appreciate it and keep it going. There's several ways you can keep it healthy. The most important part is keeping in contact with others. This can happen in person, over the phone, or through the internet. Another thing you can do is to plan activities with those in your social system. The more time you spend with people, the stronger relationships will grow. It is also important to keep in mind that sometimes, the people around us don't always fit into our system and tend to form more negative relationships with us. We can improve the situation for ourselves by being more assertive, setting limits, and distancing ourselves from overly negative relationships. In regards to these positive and negative relationships, we can focus on how our thoughts, expectations, behaviors, and feelings interact when we are with others. Certain thoughts can make you feel more comfortable with others. For example, if I thought will this person be a good friend to me, what's another way you could rephrase this thought to make me more comfortable in the situation? 
     </template>
 </category>
 
 
 
+<category>
+    <pattern>*</pattern>
+    <that>FOR EXAMPLE, IF I THOUGHT WILL THIS PERSON BE A GOOD FRIEND TO ME, WHAT'S ANOTHER WAY YOU COULD REPHRASE THIS THOUGHT TO MAKE ME MORE COMFORTABLE IN THE SITUATION?</that>
+    <template>
+        Great! I had thought maybe if I focus on enjoying myself rather than what others are doing, I'll start to feel more comfortable in the situation. Sometimes by changing your perspective you can change how you feel and behave. You should also consider your expectations. Generally, depending on the situation, what can be expected out of yourself and others will change. It's important to not make your expectations too high as you can become disappointed and not to make them too low because you won't give yourself or others a chance. Our third area to pay attention to is your actions. How do you come across? Are you making eye contact and sitting with good posture? Do you speak too slow or too fast? All of these factors can impact how you are able to interact with others. Finally, you'll want to think about your feelings. You want to make sure you recognize how you feel and express those feelings appropriately. Another thing those with depression often struggle with is assertiveness. We should try and express our positive and negative feelings comfortably and not be too aggressive or too passive. Are you good at being assertive?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- GOOD AT BEING ASSERTIVE, CONTINUE  -->
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>ARE YOU GOOD AT BEING ASSERTIVE?</that>
+    <template>
+        Good I'm really glad to hear that! That is such a healthy habit. Changing your perspective can help you be assertive. If you're able to do this well, you'll be able to not let someone be unkind without responding which can help you express your feelings so you don't feel upset later on. We can practice this together. Pretend you're waiting in line downstairs to get food and I cut ahead of you. What can you say to me that might be an aggressive response in that situation? 
+    </template>
+</category>
+
+
+<!-- NO- NOT GOOD AT BEING ASSERTIVE, WORK ON BEING ASSERTIVE  -->
+<category>
+    <pattern><set>no</set></pattern>
+    <that>ARE YOU GOOD AT BEING ASSERTIVE?</that>
+    <template>
+        That's okay  <get name = "name"/>. We can work on some strategies to be better at being assertive. It often helps to practice scenarios in your mind. You can imagine the scene and what you will say to someone. If you don't like the way it goes, you can try again. You can also imitate others who are good at this. It's always good to learn from others and follow their example. Once you're ready, you can try it in real life and keep doing this until you feel comfortable. Remember, you need to put yourself first and focus on healthy interactions with others. We can practice this together. Pretend you're waiting in line downstairs to get food and I cut ahead of you. What can you say to me that might be an aggressive response in that situation? 
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT CAN YOU SAY TO ME THAT MIGHT BE AN AGGRESSIVE RESPONSE IN THAT SITUATION? </that>
+    <template>
+        Good idea! Aggressive responses are almost never good because they escalate the situation and harm your mood. What about a passive response? 
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT ABOUT A PASSIVE RESPONSE?</that>
+    <template>
+        Perfect! Thank you for trying so hard. Another option would be if you didn't do anything and just ignored my transgression. Finally, how could you respond to me in a way that is assertive?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>FINALLY, HOW COULD YOU RESPOND TO ME IN A WAY THAT IS ASSERTIVE?</that>
+    <template>
+        Exactly you've got this! Here's what I came up with. "Excuse me, but the line starts back there. A lot of us here have been waiting for a while and it would be much better if we all took our turns." Hopefully this exercise is a good reminder that you can express your feelings in a way that benefits you and keeps a situation in check. Before you go, I wanted to show you one more video.
+    </template>
+</category>
+
+
+<!-- SHOW VIDEO -->
+<category>
+    <pattern>*</pattern>
+    <that>BEFORE YOU GO, I WANTED TO SHOW YOU ONE MORE VIDEO.</that>
+    <template>
+        What did you think of the video? Did you feel anything from it?#video:Chocolate.mp4
+    </template>
+</category>
+
+
+<!-- THOUGHTS ON VIDEO -->
+<category>
+    <pattern>*</pattern>
+    <that>DID YOU FEEL ANYTHING FROM IT?</that>
+    <template>
+        I'm glad you got something meaningful out of it. I loved that video. It made me smile when I saw it. Hopefully it's a good reminder we are impacted by other people and often times, it's in a positive manner. I hope I've had a positive impact on you. Thank you for chatting today. Next session is our last session where we will wrap up talking about how people affect our mood. Have a good weekend. Bye bye!
+    </template>
+</category>
 
 </aiml>
