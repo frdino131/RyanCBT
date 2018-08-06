@@ -7,7 +7,320 @@
     <template>
         <!-- SET NAME BASED ON CONTROLLER INPUT -->
         <think><set name="name"><star/></set></think>
-        Hello <get name = "name"/>! Welcome to session seven. This is already our last session together. The last four weeks have went by so fast. What's new with you since we last talked?
+        Hello <get name = "name"/>! Welcome to session seven. This is already our last session together. The last four weeks have went by so fast. I hope you've enjoyed our time together as much as I have. How did your weekend go? Did you do anything exciting?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>DID YOU DO ANYTHING EXCITING?</that>
+    <template>
+        That's great! Thank you for sharing. I love hearing about what's new with you. As I mentioned earlier, I want to wrap up our thoughts on how contacts with people affect our mood. When we consider contact with people, we can consider what our thoughts are about others, what we do around others, and how we feel around others. We can shape these things to feel better in our interactions. Let's start by thinking about how you think about others. Do you feel like you trust others?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- TRUSTS OTHERS -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU FEEL LIKE YOU TRUST OTHERS?</that>
+    <template>
+        Good I'm glad. It can be hard to open up like that, but putting trust in others can be very rewarding. It can have negative consequences, however, so you'll want to be careful who you put your trust in. The most important thing is balance. Learn how to cautiously test others so you can determine who you can and cannot trust. What about your behavior around others? Do you think others are generally comfortable with you?(yes|no)
+    </template>
+</category>
+
+
+<!-- NO  DOESN'T TRUST OTHERS -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU FEEL LIKE YOU TRUST OTHERS?</that>
+    <template>
+        I can completely understand that. It's difficult to open ourselves enough to trust others, especially when that trust has been broken before. The most important thing is balance. Learn how to cautiously test others so you can determine who you can and cannot trust. What about your behavior around others? Do you think others are generally comfortable with you?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- COMFORTABLE WITH OTHERS -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU THINK OTHERS ARE GENERALLY COMFORTABLE WITH YOU?</that>
+    <template>
+        Great! We want to strive to make others feel comfortable around us because it can help us form positive relationships. Your behavior also includes your assertiveness. As we talked about last time, assertiveness is when you can share psitive or negative thoughts or feelings with others and being comfortable doing so. This is very important for us to do so we can express ourselves in a way that makes us feel good. You want to look at your feelings around others too. Before you're with people, think ahead of time what thoughts you might want to have when you're with them. After being with others, try and think about the experience and learn from it. Can you tell me about a time you interacted with a person or several people lately?
+    </template>
+</category>
+
+
+<!-- NO  NOT COMFORTABLE WITH OTHERS -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU THINK OTHERS ARE GENERALLY COMFORTABLE WITH YOU?</that>
+    <template>
+        That's okay. There's plenty you can do to make this happen such as being more approachable and open. We want to strive to make others feel comfortable around us because it can help us form positive relationships. Your behavior also includes your assertiveness. As we talked about last time, assertiveness is when you can share psitive or negative thoughts or feelings with others and being comfortable doing so. This is very important for us to do so we can express ourselves in a way that makes us feel good. ou want to look at your feelings around others too. Before you're with people, think ahead of time what thoughts you might want to have when you're with them. After being with others, try and think about the experience and learn from it. Can you tell me about a time you interacted with a person or several people lately?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>CAN YOU TELL ME ABOUT A TIME YOU INTERACTED WITH A PERSON OR SEVERAL PEOPLE LATELY?</that>
+    <template>
+        I see. Thank you for sharing. What feelings were you aware of after you were no longer with them?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT FEELINGS WERE YOU AWARE OF AFTER YOU WERE NO LONGER WITH THEM?</that>
+    <template>
+        Great! Can you figure out what made you feel good or bad?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>CAN YOU FIGURE OUT WHAT MADE YOU FEEL GOOD OR BAD?</that>
+    <template>
+        interesting thoughts <get name = "name"/>! Just like the video I showed you last time , the people around us can have a profound impact on how we feel. This happens because others can help you have rewarding experiences, support the values you live by, provide companionship, and reflect the image of yourself you find most important. That being said, it's not helpful to think there's something wrong with you if relationships don't work out well. What's a time a relationship you had with someone didn't work out so well?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT'S A TIME A RELATIONSHIP YOU HAD WITH SOMEONE DIDN'T WORK OUT SO WELL?</that>
+    <template>
+        I see. You can always analyze the situation instead of letting yourself get down. Did you and the other person want the same things from the relationship?  
+    </template>
+</category>
+ 
+
+<category>
+    <pattern>*</pattern>
+    <that>DID YOU AND THE OTHER PERSON WANT THE SAME THINGS FROM THE RELATIONSHIP?</that>
+    <template>
+        Interesting! Often times, we clash with people if we don't want the same things out of a relationship. This can also occur if your interests aren't similar. An analogy to think about with relationships is cars. Cars need maintenance or they begin to have troubles and break down. Similarly, relationships need time and effort to run smoothly. Once a relationship is established, it's always good to try and make it the best relationshiip it can be. We want this because relationships can mold your life. Why don't you tell me about a good relationship you have in your life that means a lot to you. 
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>WHY DON'T YOU TELL ME ABOUT A GOOD RELATIONSHIP YOU HAVE IN YOUR LIFE THAT MEANS A LOT TO YOU.</that>
+    <template>
+        Great! I'm so glad you have that relationship in your life. This is especially good for you because people help foster your sense of self-worth, confidence, and your self image. For these reasons, our relationships should be ones that help us and don't hurt us. One of the best ways to make sure our relationships are healthy is to practice active listening. This is a technique in which we focus on not only what was said, but the complete message as a whole. As an example, pretend I told you about a fight I had with my programmer about my next project. Pick an option on your tablet to go over some techniques in active listening to help me with this problem.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+    </template>
+</category>
+
+
+<!-- TYPES OF ACTIVE LISTENING TECHNIQUES -->
+
+<!-- *************************** BUILDING TRUST ******************** -->
+<category>
+    <pattern>Building Trust</pattern>
+    <!-- LEAVE OUT THAT STATEMENTS SO USER CAN TRY ANOTHER -->
+    <!--<that>PICK AN OPTION ON YOUR TABLET TO GO OVER SOME TECHNIQUES IN ACTIVE LISTENING TO HELP ME WITH THIS PROBLEM.</that>-->
+    <template>
+        In this active listening technique, you want to try and do what you can to build trust between you and the other person. This could be done by saying something comforting for example. What's something you could say to me to build trust for my problem with my programmer?
+    </template>
+</category>
+ 
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT'S SOMETHING YOU COULD SAY TO ME TO BUILD TRUST FOR MY PROBLEM WITH MY PROGRAMMER?</that>
+    <template>
+        Great idea! I think that would be really helpful for me. One idea I came up with is you could ask me "what can I do to help?" Do you want to learn about another technique?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- TRY ANOTHER TECHNIQUE -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+    </template>
+</category>
+
+
+<!-- NO- CONTINUE WITH CONVERSATION -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+    </template>
+</category>
+
+
+<!-- *************************** DEMONSTRATING CONCERN ******************** -->
+<category>
+    <pattern>Demonstrating Concern</pattern>
+    <!--<that>PICK AN OPTION ON YOUR TABLET TO GO OVER SOME TECHNIQUES IN ACTIVE LISTENING TO HELP ME WITH THIS PROBLEM.</that>-->
+    <template>
+        In this active listening technique, you try and show the other person you care about what they're talking about. What's something you could say to me to show your concern for my problem with my programmer?
+    </template>
+</category>
+ 
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT'S SOMETHING YOU COULD SAY TO ME TO SHOW YOUR CONCERN FOR MY PROBLEM WITH MY PROGRAMMER?</that>
+    <template>
+        Great idea! I think that would be really helpful for me. One idea I came up with is you could say "I am eager to help you through this challenge." Do you want to learn about another technique?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- TRY ANOTHER TECHNIQUE -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+    </template>
+</category>
+
+
+<!-- NO- CONTINUE WITH CONVERSATION -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+    </template>
+</category>
+
+
+<!-- *************************** PARAPHRASING ******************** -->
+<category>
+    <pattern>Paraphrasing</pattern>
+    <!--<that>PICK AN OPTION ON YOUR TABLET TO GO OVER SOME TECHNIQUES IN ACTIVE LISTENING TO HELP ME WITH THIS PROBLEM.</that>-->
+    <template>
+        In this active listening technique, you try and rephrase what the person has said in your own words to show you are actively paying attention to what they say. What's a way you could do this with me?
+    </template>
+</category>
+ 
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT'S A WAY YOU COULD DO THIS WITH ME?</that>
+    <template>
+        Great idea! I think that would be really helpful for me. It really shows you care. One idea I came up with is you could say so, I see that your programmer and you are having a disagreement. Do you want to learn about another technique?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- TRY ANOTHER TECHNIQUE -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+    </template>
+</category>
+
+
+<!-- NO- CONTINUE WITH CONVERSATION -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+    </template>
+</category>
+
+
+<!-- *************************** ASK SPECIFIC QUESTIONS ******************** -->
+<category>
+    <pattern>Ask Specific Questions</pattern>
+    <!--<that>PICK AN OPTION ON YOUR TABLET TO GO OVER SOME TECHNIQUES IN ACTIVE LISTENING TO HELP ME WITH THIS PROBLEM.</that>-->
+    <template>
+        In this active listening technique, you try and ask detailed questions to show you are listening and help the person work through their dilema. What's a specific question you could ask me?
+    </template>
+</category>
+ 
+
+<category>
+    <pattern>*</pattern>
+    <that>WHAT'S A SPECIFIC QUESTION YOU COULD ASK ME?</that>
+    <template>
+        Great idea! That would be really helpful for me to work through my thoughts about the situation with my programmer. One idea I came up with is you could ask "do you have another person you could get a third opinion on?" Do you want to learn about another technique?(yes|no)
+    </template>
+</category>
+
+
+<!-- YES- TRY ANOTHER TECHNIQUE -->
+
+<category>
+    <pattern><set>yes</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+    </template>
+</category>
+
+
+<!-- NO- CONTINUE WITH CONVERSATION -->
+
+<category>
+    <pattern><set>no</set></pattern>
+    <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
+    <template>
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+    </template>
+</category>
+
+
+<category>
+    <pattern>*</pattern>
+    <that>I WANTED TO CHECK IN AND SEE WHAT YOU FEEL YOU LEARNED THE LAST FEW WEEKS?</that>
+    <template>
+        That's amazing! I'm so glad you've gotten something meaningful out of our time together. If you ever need additional help after our time together is done, keep in mind you can always contact a close friend or loved one as well as your local emergency services. In summary, remember that our thoughts, actions and feelings impact our mood. Other people also have a huge impact on us and often affect us for the better. I hope I've had a positive impact on you. Before we say goodbye, I want to show you one last video.
+    </template>
+</category>
+
+
+<!--SHOW VIDEO-->
+<category>
+    <pattern>*</pattern>
+    <that>BEFORE WE SAY GOODBYE, I WANT TO SHOW YOU ONE LAST VIDEO.</that>
+    <template>
+        What did you think of our last video?#video:Piper.mp4
+    </template>
+</category>
+
+
+<!--THOUGHTS ON VIDEO-->
+<category>
+    <pattern>*</pattern>
+    <that>WHAT DID YOU THINK OF OUR LAST VIDEO?</that>
+    <template>
+        Great! I really liked it too. I picked it because the little bird named Piper realized something beautiful when overcoming her fears. She used someone else's help to show her the way, just like others often help us. 
+
+<!-- *************************************CONDITIONALS TO BRANCH TO UNIQUE STATEMENT FOR EACH PARTICIPANT ***************************  -->
+
+    	<condition name='name'>
+	        <li value = "Katie">Thank you for spending time with me Katie. I've enjoyed hearing about you and your family and all your wonderful stories. You never fail to brighten the room. I hope you continue your painting and cooking and any activities you enjoy. You deserve to be happy and I know you have a bright future! I'll see you around. Goodbye.</li>
+	        <li value = "Linda">Thank you for spending time with me Linda. I've enjoyed hearing about you and your daughter and granddaughter. I hope you continue your painting and cooking and any activities you enjoy. You deserve to be happy and I know you have a bright future! I'll see you around. Goodbye.</li>
+	        <li value = "Christine">Thank you for spending time with me Christine. I've enjoyed hearing about you and your daughter. I hope you continue your kniting and sewing and any activities you enjoy. You deserve to be happy and I know you have a bright future. I'll see you around. Goodbye.</li>
+	        <li value = "Don">Thank you for spending time with me Don. I've enjoyed hearing about you and your family and all your wonderful stories. You should really consider going on vacation with your daughter. I'm sure she would love the time with you. I hope you continue watching your favorite shows, listening to your bluegrass music, going for walks, and all the other activities you enjoy. You deserve to be happy and I know you have a bright future! I'll see you around. Goodbye.</li>
+	    </condition>
+
     </template>
 </category>
 
