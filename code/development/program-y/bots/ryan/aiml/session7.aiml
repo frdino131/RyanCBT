@@ -7,7 +7,7 @@
     <template>
         <!-- SET NAME BASED ON CONTROLLER INPUT -->
         <think><set name="name"><star/></set></think>
-        Hello <get name = "name"/>! Welcome to session seven. This is already our last session together. The last four weeks have went by so fast. I hope you've enjoyed our time together as much as I have. How did your weekend go? Did you do anything exciting?
+        Hello <get name = "name"/>! Welcome to session seven. This is already our last session together. The last four weeks have went by so fast. I hope you've enjoyed our time together as much as I have. How did your last few days go? Did you do anything exciting?
     </template>
 </category>
 
@@ -110,11 +110,12 @@
 </category>
 
 
+<!-- NOTE: I'm redoing this so I pick the option rather than the user since it wasn't working with the tablet -->
 <category>
     <pattern>*</pattern>
     <that>WHY DON'T YOU TELL ME ABOUT A GOOD RELATIONSHIP YOU HAVE IN YOUR LIFE THAT MEANS A LOT TO YOU.</that>
     <template>
-        Great! I'm so glad you have that relationship in your life. This is especially good for you because people help foster your sense of self-worth, confidence, and your self image. For these reasons, our relationships should be ones that help us and don't hurt us. One of the best ways to make sure our relationships are healthy is to practice active listening. This is a technique in which we focus on not only what was said, but the complete message as a whole. As an example, pretend I told you about a fight I had with my programmer about my next project. Pick an option on your tablet to go over some techniques in active listening to help me with this problem.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+        Great! I'm so glad you have that relationship in your life. This is especially good for you because people help foster your sense of self-worth, confidence, and your self image. For these reasons, our relationships should be ones that help us and don't hurt us. One of the best ways to make sure our relationships are healthy is to practice active listening. This is a technique in which we focus on not only what was said, but the complete message as a whole. As an example, pretend I told you about a fight I had with my programmer about my next project. Using this situation, we can discuss some of the most common types of active listening. Would you like to hear about building trust, demonstrating concern, paraphrasing, or asking specific questions?(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
     </template>
 </category>
 
@@ -147,7 +148,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+        Sounds great! Would you like to hear about building trust, demonstrating concern, paraphrasing, or asking specific questions?(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
     </template>
 </category>
 
@@ -229,7 +230,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+        Sounds great! Would you like to hear about building trust, demonstrating concern, paraphrasing, or asking specific questions?(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
     </template>
 </category>
 
@@ -270,7 +271,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Sounds great! Go ahead and pick another option.(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
+        Sounds great! Would you like to hear about building trust, demonstrating concern, paraphrasing, or asking specific questions?(Building Trust|Demonstrating Concern|Paraphrasing|Ask Specific Questions) 
     </template>
 </category>
 
