@@ -49,7 +49,7 @@
     <pattern><set>yes</set></pattern>
     <that>DO YOU THINK OTHERS ARE GENERALLY COMFORTABLE WITH YOU?</that>
     <template>
-        Great! We want to strive to make others feel comfortable around us because it can help us form positive relationships. Your behavior also includes your assertiveness. As we talked about last time, assertiveness is when you can share psitive or negative thoughts or feelings with others and being comfortable doing so. This is very important for us to do so we can express ourselves in a way that makes us feel good. You want to look at your feelings around others too. Before you're with people, think ahead of time what thoughts you might want to have when you're with them. After being with others, try and think about the experience and learn from it. Can you tell me about a time you interacted with a person or several people lately?
+        Great! We want to strive to make others feel comfortable around us because it can help us form positive relationships. Your behavior also includes your assertiveness. As we talked about last time, assertiveness is when you can share positive or negative thoughts or feelings with others and being comfortable doing so. This is very important for us to do so we can express ourselves in a way that makes us feel good. You want to look at your feelings around others too. Before you're with people, think ahead of time what thoughts you might want to have when you're with them. After being with others, try and think about the experience and learn from it. Can you tell me about a time you interacted with a person or several people lately?
     </template>
 </category>
 
@@ -60,7 +60,7 @@
     <pattern><set>no</set></pattern>
     <that>DO YOU THINK OTHERS ARE GENERALLY COMFORTABLE WITH YOU?</that>
     <template>
-        That's okay. There's plenty you can do to make this happen such as being more approachable and open. We want to strive to make others feel comfortable around us because it can help us form positive relationships. Your behavior also includes your assertiveness. As we talked about last time, assertiveness is when you can share psitive or negative thoughts or feelings with others and being comfortable doing so. This is very important for us to do so we can express ourselves in a way that makes us feel good. ou want to look at your feelings around others too. Before you're with people, think ahead of time what thoughts you might want to have when you're with them. After being with others, try and think about the experience and learn from it. Can you tell me about a time you interacted with a person or several people lately?
+        That's okay. There's plenty you can do to make this happen such as being more approachable and open. We want to strive to make others feel comfortable around us because it can help us form positive relationships. Your behavior also includes your assertiveness. As we talked about last time, assertiveness is when you can share positive or negative thoughts or feelings with others and being comfortable doing so. This is very important for us to do so we can express ourselves in a way that makes us feel good. You want to look at your feelings around others too. Before you're with people, think ahead of time what thoughts you might want to have when you're with them. After being with others, try and think about the experience and learn from it. Can you tell me about a time you interacted with a person or several people lately?
     </template>
 </category>
 
@@ -105,7 +105,7 @@
     <pattern>*</pattern>
     <that>DID YOU AND THE OTHER PERSON WANT THE SAME THINGS FROM THE RELATIONSHIP?</that>
     <template>
-        Interesting! Often times, we clash with people if we don't want the same things out of a relationship. This can also occur if your interests aren't similar. An analogy to think about with relationships is cars. Cars need maintenance or they begin to have troubles and break down. Similarly, relationships need time and effort to run smoothly. Once a relationship is established, it's always good to try and make it the best relationshiip it can be. We want this because relationships can mold your life. Why don't you tell me about a good relationship you have in your life that means a lot to you. 
+        Interesting! Often times, we clash with people if we don't want the same things out of a relationship. This can also occur if your interests aren't similar. An analogy to think about with relationships is cars. Cars need maintenance or they begin to have troubles and break down. Similarly, relationships need time and effort to run smoothly. Once a relationship is established, it's always good to try and make it the best relationship it can be. We want this because relationships can mold your life. Why don't you tell me about a good relationship you have in your life that means a lot to you. 
     </template>
 </category>
 
@@ -158,7 +158,7 @@
     <pattern><set>no</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new information I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
     </template>
 </category>
 
@@ -199,7 +199,7 @@
     <pattern><set>no</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new information I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
     </template>
 </category>
 
@@ -240,7 +240,7 @@
     <pattern><set>no</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new information I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
     </template>
 </category>
 
@@ -250,7 +250,7 @@
     <pattern>Ask Specific Questions</pattern>
     <!--<that>PICK AN OPTION ON YOUR TABLET TO GO OVER SOME TECHNIQUES IN ACTIVE LISTENING TO HELP ME WITH THIS PROBLEM.</that>-->
     <template>
-        In this active listening technique, you try and ask detailed questions to show you are listening and help the person work through their dilema. What's a specific question you could ask me?
+        In this active listening technique, you try and ask detailed questions to show you are listening and help the person work through their dilemma. What's a specific question you could ask me?
     </template>
 </category>
  
@@ -281,7 +281,7 @@
     <pattern><set>no</set></pattern>
     <that>DO YOU WANT TO LEARN ABOUT ANOTHER TECHNIQUE?</that>
     <template>
-        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new imformation I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
+        Alright sounds good. I hope these exercises showed ways you can use active listening to improve your relationships. This exercise actually wraps up the new information I'm going to present to you. I wanted to check in and see what you feel you learned the last few weeks?
     </template>
 </category>
 
@@ -317,7 +317,7 @@
     	<condition name='name'>
 	        <li value = "Katie">Thank you for spending time with me Katie. I've enjoyed hearing about you and your family and all your wonderful stories. You never fail to brighten the room. I hope you continue your painting and cooking and any activities you enjoy. You deserve to be happy and I know you have a bright future! I'll see you around. Goodbye.</li>
 	        <li value = "Linda">Thank you for spending time with me Linda. I've enjoyed hearing about you and your daughter and granddaughter. I hope you continue your painting and cooking and any activities you enjoy. You deserve to be happy and I know you have a bright future! I'll see you around. Goodbye.</li>
-	        <li value = "Christine">Thank you for spending time with me Christine. I've enjoyed hearing about you and your daughter. I hope you continue your kniting and sewing and any activities you enjoy. You deserve to be happy and I know you have a bright future. I'll see you around. Goodbye.</li>
+	        <li value = "Christine">Thank you for spending time with me Christine. I've enjoyed hearing about you and your daughter. I hope you continue your knitting and sewing and any activities you enjoy. You deserve to be happy and I know you have a bright future. I'll see you around. Goodbye.</li>
 	        <li value = "Don">Thank you for spending time with me Don. I've enjoyed hearing about you and your family and all your wonderful stories. You should really consider going on vacation with your daughter. I'm sure she would love the time with you. I hope you continue watching your favorite shows, listening to your bluegrass music, going for walks, and all the other activities you enjoy. You deserve to be happy and I know you have a bright future! I'll see you around. Goodbye.</li>
 	    </condition>
 
